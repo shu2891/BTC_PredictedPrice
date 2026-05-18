@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*.db
+*.log
+.pi_telegram_env
+.pi_telegram_env_ascii

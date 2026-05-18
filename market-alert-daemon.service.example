@@ -1,0 +1,17 @@
+[Unit]
+Description=check_price market alert daemon
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/check_price
+ExecStart=/usr/bin/python3 /opt/check_price/market_alert_daemon.py --config /opt/check_price/watchlist.json --state-db /opt/check_price/alert_state.db --interval-seconds 60 --llama off
+Restart=always
+RestartSec=10
+Environment=TELEGRAM_BOT_TOKEN=
+Environment=TELEGRAM_CHAT_ID=
+Environment=TELEGRAM_MESSAGE_PREFIX=[check_price]
+
+[Install]
+WantedBy=multi-user.target

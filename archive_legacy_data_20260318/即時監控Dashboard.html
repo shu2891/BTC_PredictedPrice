@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shadow Dashboard</title>
+  <style>
+    :root {
+      --bg:#f7f9fc; --card:#ffffff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb;
+      --a:#0ea5e9; --b:#22c55e; --c:#f59e0b; --d:#ef4444;
+    }
+    body { margin:0; font-family: "Segoe UI", "Noto Sans TC", sans-serif; background:var(--bg); color:var(--text); }
+    .wrap { max-width: 1100px; margin: 24px auto; padding: 0 16px 28px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; }
+    h1,h2 { margin:0 0 10px; }
+    .num { font-size: 28px; font-weight: 700; }
+    .muted { color:var(--muted); font-size: 13px; }
+    .bar { height: 10px; border-radius: 999px; background: #e5e7eb; overflow: hidden; margin-top: 6px; }
+    .bar > span { display:block; height:100%; background: linear-gradient(90deg, var(--a), var(--b)); }
+    table { width:100%; border-collapse: collapse; }
+    th,td { text-align:left; padding:8px; border-bottom:1px solid var(--line); font-size:14px; }
+    .row { display:flex; gap:8px; flex-wrap:wrap; }
+    input,select,button { padding:9px 10px; border:1px solid var(--line); border-radius:8px; }
+    button { background: linear-gradient(90deg, var(--a), var(--b)); border:none; color:#fff; cursor:pointer; }
+    .result { border:1px solid var(--line); border-radius:10px; padding:10px; margin-top:10px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Shadow Mode Dashboard</h1>
+    <p class="muted">更新時間(UTC): 2026-03-16T14:06:24.246345+00:00</p>
+    <div class="grid">
+      <div class="card"><div class="muted">總訊號</div><div class="num" id="totalSignals"></div></div>
+      <div class="card"><div class="muted">已回填</div><div class="num" id="totalEvals"></div></div>
+      <div class="card"><div class="muted">決策種類</div><div class="num" id="decisionKinds"></div></div>
+      <div class="card"><div class="muted">風險層級</div><div class="num" id="riskKinds"></div></div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h2>決策分布</h2>
+      <div id="decisionDist"></div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h2>風險分布</h2>
+      <div id="riskDist"></div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h2>方向分布</h2>
+      <div id="directionDist"></div>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h2>Horizon 命中率</h2>
+      <table>
+        <thead><tr><th>Horizon</th><th>筆數</th><th>命中率</th><th>平均報酬</th></tr></thead>
+        <tbody id="horizonRows"></tbody>
+      </table>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h2>每日績效</h2>
+      <table>
+        <thead><tr><th>日期</th><th>Horizon</th><th>筆數</th><th>命中率</th><th>平均報酬</th></tr></thead>
+        <tbody id="dailyRows"></tbody>
+      </table>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h2>方向命中率</h2>
+      <table>
+        <thead><tr><th>方向</th><th>筆數</th><th>方向命中率</th><th>觸發後命中率</th><th>平均報酬</th></tr></thead>
+        <tbody id="directionRows"></tbody>
+      </table>
+    </div>
+
+    <div class="card" style="margin-top:12px;">
+      <h2>即時新手查詢</h2>
+      <p class="muted">先啟動：<code>python advisor_api_server.py</code>，再在這裡輸入 BTC/ETH 查白話摘要。</p>
+      <div class="row">
+        <input id="askSymbol" value="ETH" placeholder="輸入幣種，例如 ETH 或 BTC ETH" />
+        <select id="askProfile">
+          <option value="conservative">conservative</option>
+          <option value="balanced">balanced</option>
+          <option value="aggressive">aggressive</option>
+        </select>
+        <select id="askLlama">
+          <option value="auto">auto</option>
+          <option value="off">off</option>
+          <option value="on">on</option>
+        </select>
+        <button id="askBtn">查詢摘要</button>
+      </div>
+      <div id="askStatus" class="muted">尚未查詢</div>
+      <div id="askResult"></div>
+    </div>
+  </div>
+  <script>
+    const data = {"total_signals": 19, "total_evaluations": 64, "decision_dist": {"watch": 18, "avoid": 1}, "direction_dist": {"neutral": 17, "long": 2}, "risk_dist": {"high": 11, "low": 1, "medium": 7}, "horizon_stats": {"1": {"count": 19, "hit_rate": 1.0, "avg_return_pct": -0.07312271778439482, "direction_count": 2, "direction_hit_rate": 0.0, "trigger_count": 2, "trigger_hit_rate": 0.0}, "4": {"count": 19, "hit_rate": 1.0, "avg_return_pct": 0.32637156400961226, "direction_count": 2, "direction_hit_rate": 1.0, "trigger_count": 2, "trigger_hit_rate": 0.0}, "24": {"count": 13, "hit_rate": 0.7692307692307693, "avg_return_pct": 0.30948229319974424, "direction_count": 0, "direction_hit_rate": null, "trigger_count": 0, "trigger_hit_rate": null}, "72": {"count": 13, "hit_rate": 0.6923076923076923, "avg_return_pct": 0.8985439514197229, "direction_count": 0, "direction_hit_rate": null, "trigger_count": 0, "trigger_hit_rate": null}}, "daily_stats": [{"day": "2026-03-11", "horizon": 1, "count": 10, "hit_rate": 1.0, "avg_return_pct": -0.18002681150282696}, {"day": "2026-03-11", "horizon": 24, "count": 10, "hit_rate": 1.0, "avg_return_pct": -0.8232843285281277}, {"day": "2026-03-11", "horizon": 4, "count": 10, "hit_rate": 1.0, "avg_return_pct": -0.16709683086045146}, {"day": "2026-03-11", "horizon": 72, "count": 10, "hit_rate": 0.9, "avg_return_pct": -0.06982375304927846}, {"day": "2026-03-12", "horizon": 1, "count": 3, "hit_rate": 1.0, "avg_return_pct": 0.22943353284216408}, {"day": "2026-03-12", "horizon": 24, "count": 3, "hit_rate": 0.0, "avg_return_pct": 4.08537103229265}, {"day": "2026-03-12", "horizon": 4, "count": 3, "hit_rate": 1.0, "avg_return_pct": 1.483677177439513}, {"day": "2026-03-12", "horizon": 72, "count": 3, "hit_rate": 0.0, "avg_return_pct": 4.126436299649726}, {"day": "2026-03-15", "horizon": 1, "count": 6, "hit_rate": 1.0, "avg_return_pct": -0.04622735356695403}, {"day": "2026-03-15", "horizon": 4, "count": 6, "hit_rate": 1.0, "avg_return_pct": 0.5701660820781015}], "direction_stats": {"long": {"count": 4, "hit_rate": 0.5, "trigger_hit_rate": 0.0, "avg_return_pct": 0.3835628564395843}}};
+    const totalSignals = data.total_signals || 0;
+    document.getElementById('totalSignals').textContent = totalSignals;
+    document.getElementById('totalEvals').textContent = data.total_evaluations || 0;
+    document.getElementById('decisionKinds').textContent = Object.keys(data.decision_dist || {}).length;
+    document.getElementById('riskKinds').textContent = Object.keys(data.risk_dist || {}).length;
+
+    function renderDist(elId, dist) {
+      const el = document.getElementById(elId);
+      const keys = Object.keys(dist || {}).sort();
+      if (!keys.length) {
+        el.innerHTML = '<p class="muted">無資料</p>';
+        return;
+      }
+      el.innerHTML = keys.map(k => {
+        const c = dist[k];
+        const pct = totalSignals ? (c / totalSignals * 100).toFixed(1) : '0.0';
+        return `
+          <div style="margin:8px 0;">
+            <div><b>${k}</b> - ${c} (${pct}%)</div>
+            <div class="bar"><span style="width:${pct}%"></span></div>
+          </div>
+        `;
+      }).join('');
+    }
+    renderDist('decisionDist', data.decision_dist);
+    renderDist('riskDist', data.risk_dist);
+    renderDist('directionDist', data.direction_dist);
+
+    const hz = data.horizon_stats || {};
+    const hzRows = Object.keys(hz).sort((a,b)=>Number(a)-Number(b)).map(k => {
+      const r = hz[k];
+      const hr = ((r.hit_rate || 0) * 100).toFixed(1) + '%';
+      const ar = (r.avg_return_pct || 0).toFixed(3) + '%';
+      const dr = r.direction_hit_rate == null ? '-' : ((r.direction_hit_rate || 0) * 100).toFixed(1) + '%';
+      const tr = r.trigger_hit_rate == null ? '-' : ((r.trigger_hit_rate || 0) * 100).toFixed(1) + '%';
+      return `<tr><td>${k}h</td><td>${r.count || 0}</td><td>${hr} / dir ${dr} / trg ${tr}</td><td>${ar}</td></tr>`;
+    }).join('');
+    document.getElementById('horizonRows').innerHTML = hzRows || '<tr><td colspan="4" class="muted">尚無到期資料</td></tr>';
+
+    const dailyRows = (data.daily_stats || []).map(r => {
+      const hr = ((r.hit_rate || 0) * 100).toFixed(1) + '%';
+      const ar = (r.avg_return_pct || 0).toFixed(3) + '%';
+      return `<tr><td>${r.day}</td><td>${r.horizon}h</td><td>${r.count}</td><td>${hr}</td><td>${ar}</td></tr>`;
+    }).join('');
+    document.getElementById('dailyRows').innerHTML = dailyRows || '<tr><td colspan="5" class="muted">尚無到期資料</td></tr>';
+
+    const dirRows = Object.keys(data.direction_stats || {}).sort().map(k => {
+      const r = data.direction_stats[k];
+      const hr = ((r.hit_rate || 0) * 100).toFixed(1) + '%';
+      const tr = r.trigger_hit_rate == null ? '-' : ((r.trigger_hit_rate || 0) * 100).toFixed(1) + '%';
+      const ar = (r.avg_return_pct || 0).toFixed(3) + '%';
+      return `<tr><td>${k}</td><td>${r.count || 0}</td><td>${hr}</td><td>${tr}</td><td>${ar}</td></tr>`;
+    }).join('');
+    document.getElementById('directionRows').innerHTML = dirRows || '<tr><td colspan="5" class="muted">尚無可交易方向訊號</td></tr>';
+
+    async function askNow() {
+      const symbols = document.getElementById('askSymbol').value.trim();
+      const profile = document.getElementById('askProfile').value;
+      const llama = document.getElementById('askLlama').value;
+      const status = document.getElementById('askStatus');
+      const result = document.getElementById('askResult');
+      if (!symbols) {
+        status.textContent = '請輸入幣種';
+        return;
+      }
+      status.textContent = '查詢中...';
+      result.innerHTML = '';
+      try {
+        const q = new URLSearchParams({symbols, profile, llama});
+        const resp = await fetch('http://127.0.0.1:8765/api/analyze?' + q.toString());
+        const data = await resp.json();
+        if (!resp.ok) {
+          throw new Error(data.error || '查詢失敗');
+        }
+        status.textContent = `完成：${data.results.length} 個幣種`;
+        result.innerHTML = data.results.map(r => {
+          const b = r.beginner_summary || {};
+          const lv = r.actionable_levels || {};
+          const ls = r.long_short_plan || {};
+          const longSetup = ls.long_setup || {};
+          const shortSetup = ls.short_setup || {};
+          const avoid = (b.avoid || []).map(x => `<li>${x}</li>`).join('');
+          return `
+            <div class="result">
+              <div><b>${r.symbol}</b> - ${b.headline || r.decision}</div>
+              <div>為什麼：${b.core_reason || ''}</div>
+              <div>現在怎麼做：${b.now_action || ''}</div>
+              <div>提醒價位：${b.reminder || ''}</div>
+              <div>區間/時間：${b.range_hint || ''}</div>
+              <div>做多做空：${b.long_short_hint || ''}</div>
+              <div class="muted">上破=${lv.breakout_up ?? '-'} / 下破=${lv.breakout_down ?? '-'} / 區間=${lv.range_low ?? '-'}~${lv.range_high ?? '-'}</div>
+              <div class="muted">做多觸發=${longSetup.trigger_price ?? '-'} / 做空觸發=${shortSetup.trigger_price ?? '-'} / 建議=${ls.recommendation ?? '-'}</div>
+              <ul>${avoid}</ul>
+            </div>
+          `;
+        }).join('');
+      } catch (err) {
+        status.textContent = '查詢失敗：' + err.message;
+      }
+    }
+    document.getElementById('askBtn').addEventListener('click', askNow);
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-05-04T14:10:56.324811+00:00",
+  "start_date_utc": "2025-12-31",
+  "end_date_utc": "2026-04-01",
+  "total_orders": 61,
+  "status_counts": {
+    "canceled": 13,
+    "closed": 48
+  },
+  "type_counts": {
+    "effective_long_breakout": 30,
+    "effective_short_breakdown": 12,
+    "second_breakout_long": 11,
+    "second_breakdown_short": 8
+  },
+  "trades": 48,
+  "win_rate": 47.91666666666667,
+  "avg_pnl_pct": 1.418151742809008,
+  "avg_realized_r": 0.7689647155756919,
+  "avg_gross_pnl_pct": 1.5181517428090083,
+  "avg_gross_realized_r": 0.8232109439004341,
+  "total_fee_pct": 4.799999999999999,
+  "latest_equity": 13758.452967905527,
+  "created_event_counts": {
+    "effective_long_breakout": 30,
+    "second_breakout_long": 11,
+    "second_breakdown_short": 8,
+    "effective_short_breakdown": 12
+  },
+  "blocked_reason_counts": {
+    "max_symbol_positions": 16
+  },
+  "event_net_stats": [
+    {
+      "event_type": "effective_short_breakdown",
+      "trades": 7,
+      "win_rate": 57.14285714285714,
+      "avg_net_pnl_pct": 2.397221370793878,
+      "avg_net_realized_r": 1.1339142861897582
+    },
+    {
+      "event_type": "second_breakdown_short",
+      "trades": 7,
+      "win_rate": 57.14285714285714,
+      "avg_net_pnl_pct": 2.0237178369911297,
+      "avg_net_realized_r": 1.1298314340845632
+    },
+    {
+      "event_type": "effective_long_breakout",
+      "trades": 27,
+      "win_rate": 48.148148148148145,
+      "avg_net_pnl_pct": 1.4397071393554033,
+      "avg_net_realized_r": 0.7759032880268744
+    },
+    {
+      "event_type": "second_breakout_long",
+      "trades": 7,
+      "win_rate": 28.57142857142857,
+      "avg_net_pnl_pct": -0.2496262231797927,
+      "avg_net_realized_r": 0.016385361283906694
+    }
+  ],
+  "symbol_event_net_stats": [
+    {
+      "symbol": "SOLUSDT",
+      "event_type": "effective_long_breakout",
+      "trades": 7,
+      "win_rate": 71.42857142857143,
+      "avg_net_pnl_pct": 3.1717940221992555,
+      "avg_net_realized_r": 1.6937347612334137
+    },
+    {
+      "symbol": "XRPUSDT",
+      "event_type": "effective_long_breakout",
+      "trades": 5,
+      "win_rate": 60.0,
+      "avg_net_pnl_pct": 2.439166327200028,
+      "avg_net_realized_r": 1.2421986764007227
+    },
+    {
+      "symbol": "XRPUSDT",
+      "event_type": "effective_short_breakdown",
+      "trades": 7,
+      "win_rate": 57.14285714285714,
+      "avg_net_pnl_pct": 2.397221370793878,
+      "avg_net_realized_r": 1.1339142861897582
+    },
+    {
+      "symbol": "BTCUSDT",
+      "event_type": "effective_long_breakout",
+      "trades": 11,
+      "win_rate": 36.36363636363637,
+      "avg_net_pnl_pct": 0.5200633142289706,
+      "avg_net_realized_r": 0.30990153094040257
+    },
+    {
+      "symbol": "BTCUSDT",
+      "event_type": "second_breakout_long",
+      "trades": 3,
+      "win_rate": 33.33333333333333,
+      "avg_net_pnl_pct": 0.3288335083613685,
+      "avg_net_realized_r": 0.1903596986817376
+    },
+    {
+      "symbol": "XRPUSDT",
+      "event_type": "second_breakdown_short",
+      "trades": 4,
+      "win_rate": 25.0,
+      "avg_net_pnl_pct": -0.16076371538469103,
+      "avg_net_realized_r": -0.1248362507183961
+    },
+    {
+      "symbol": "ETHUSDT",
+      "event_type": "effective_long_breakout",
+      "trades": 4,
+      "win_rate": 25.0,
+      "avg_net_pnl_pct": -0.3117483713294289,
+      "avg_net_realized_r": -0.13166619356408188
+    }
+  ],
+  "eligible_events": [
+    "effective_long_breakout",
+    "effective_short_breakdown",
+    "second_breakdown_short",
+    "second_breakout_long"
+  ]
+}

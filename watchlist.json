@@ -1,0 +1,90 @@
+{
+  "symbols": ["BTC", "ETH", "XRP", "SOL"],
+  "risk_profile": "conservative",
+  "strategy": {
+    "style": "swing",
+    "primary_timeframes": ["1h", "4h"]
+  },
+  "presentation": {
+    "display_timezone": "Asia/Taipei",
+    "session_labels": [
+      {"start": "08:00", "end": "15:59", "label": "亞盤"},
+      {"start": "16:00", "end": "20:59", "label": "歐盤"},
+      {"start": "21:00", "end": "23:59", "label": "美盤開盤"},
+      {"start": "00:00", "end": "03:59", "label": "美盤後半"},
+      {"start": "04:00", "end": "07:59", "label": "低量觀察"}
+    ]
+  },
+  "cooldown_minutes": 30,
+  "onchain": {
+    "enabled": true,
+    "provider": "coinmetrics",
+    "symbols": ["BTC", "ETH"],
+    "api_key_env": "COINMETRICS_API_KEY"
+  },
+  "funding": {
+    "enabled": true,
+    "provider": "binance_futures",
+    "symbols": ["BTCUSDT", "ETHUSDT"],
+    "history_limit": 12,
+    "extreme_positive": 0.0003,
+    "extreme_negative": -0.0001,
+    "block_long_above": 0.0005,
+    "block_short_below": -0.0003
+  },
+  "alerts": {
+    "notification_language": "zh",
+    "enable_approach_alerts": true,
+    "enable_trigger_alerts": true,
+    "enable_volatility_alerts": true,
+    "enable_bull_pullback_alerts": true,
+    "enable_15m_shock_alerts": true,
+    "volatility_alert_cooldown_minutes": 90,
+    "pullback_alert_cooldown_minutes": 90,
+    "shock_alert_cooldown_minutes": 60,
+    "macro_alert_cooldown_minutes": 360,
+    "bull_pullback_15m_drop_pct": 1.0,
+    "bull_pullback_1h_drop_pct": 0.8,
+    "shock_15m_pct": 1.3,
+    "approach_proximity_pct": 0.15,
+    "approach_edge_ratio": 0.35,
+    "effective_short_volume_ratio_min": 1.2,
+    "retest_volume_ratio_min": 1.05,
+    "long_symbol_tuning": {
+      "SOLUSDT": {
+        "effective_volume_ratio_min": 1.35,
+        "min_core_score": 3,
+        "require_4h_bullish": true,
+        "require_1h_above_vwap": true
+      },
+      "XRPUSDT": {
+        "effective_volume_ratio_min": 1.3,
+        "min_core_score": 3,
+        "require_4h_bullish": true,
+        "require_1h_above_vwap": true
+      }
+    },
+    "lock_timeout_minutes": 120,
+    "lock_drift_pct": 1.0
+  },
+  "protections": {
+    "enable": true,
+    "high_volatility_pause": {
+      "enabled": true,
+      "spike_5m_pct": 1.8,
+      "realized_24h_pct": 4.5
+    },
+    "countertrend_pause": {
+      "enabled": true,
+      "block_long_in_bear_trend": true,
+      "block_short_in_bull_trend": true
+    },
+    "loss_streak_cooldown": {
+      "enabled": true,
+      "horizon_label": "1h",
+      "loss_streak_count": 3,
+      "cooldown_hours": 6,
+      "lookback_rows": 12
+    }
+  }
+}

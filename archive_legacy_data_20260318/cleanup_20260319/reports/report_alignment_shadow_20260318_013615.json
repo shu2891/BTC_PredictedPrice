@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "generated_at": "2026-03-18T13:54:56.221825+00:00",
+    "overall": {
+      "samples": 2,
+      "direction_match_rate": 0.0,
+      "tp_sl_match_rate": 0.0,
+      "breakout_match_rate": 0.0,
+      "timing_match_rate": 1.0,
+      "avg_return_24h_pct": -3.4035
+    },
+    "expected_direction_distribution": {
+      "up": 2
+    },
+    "symbol_distribution": {
+      "BTCUSDT": 1,
+      "ETHUSDT": 1
+    },
+    "by_expected_direction": {
+      "up": {
+        "count": 2,
+        "direction_match_rate": 0.0,
+        "tp_sl_match_rate": 0.0,
+        "breakout_match_rate": 0.0,
+        "timing_match_rate": 1.0,
+        "avg_return_24h_pct": -3.4035
+      }
+    }
+  },
+  "samples": [
+    {
+      "source_file": "shadow_20260318_013615.json",
+      "symbol": "BTCUSDT",
+      "timestamp": "2026-03-17T17:36:16.045277+00:00",
+      "decision": "watch",
+      "trend_view": "mixed",
+      "expected_direction": "up",
+      "entry_price": 74272.39,
+      "close_24h": 72162.67,
+      "return_24h_pct": -2.841,
+      "max_up_pct": 0.71,
+      "max_down_pct": -2.902,
+      "direction_match": false,
+      "tp_sl_state": "sl",
+      "tp_sl_timestamp": "2026-03-18T00:35:00+00:00",
+      "tp_sl_match": false,
+      "breakout_state": "down",
+      "breakout_timestamp": "2026-03-18T11:30:00+00:00",
+      "breakout_match": false,
+      "timing_window": "約 8-24 小時",
+      "timing_hours": 17.896,
+      "timing_match": true,
+      "has_actionable_levels": true,
+      "has_long_short_plan": true
+    },
+    {
+      "source_file": "shadow_20260318_013615.json",
+      "symbol": "ETHUSDT",
+      "timestamp": "2026-03-17T17:36:16.474604+00:00",
+      "decision": "watch",
+      "trend_view": "bullish",
+      "expected_direction": "up",
+      "entry_price": 2327.88,
+      "close_24h": 2235.56,
+      "return_24h_pct": -3.966,
+      "max_up_pct": 0.95,
+      "max_down_pct": -4.476,
+      "direction_match": false,
+      "tp_sl_state": "sl",
+      "tp_sl_timestamp": "2026-03-18T11:25:00+00:00",
+      "tp_sl_match": false,
+      "breakout_state": "down",
+      "breakout_timestamp": "2026-03-18T11:25:00+00:00",
+      "breakout_match": false,
+      "timing_window": "約 8-24 小時",
+      "timing_hours": 17.812,
+      "timing_match": true,
+      "has_actionable_levels": true,
+      "has_long_short_plan": true
+    }
+  ]
+}

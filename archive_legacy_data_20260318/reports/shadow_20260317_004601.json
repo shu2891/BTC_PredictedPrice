@@ -1,0 +1,280 @@
+{
+  "run_id": "20260317_004601",
+  "generated_at": "2026-03-16T16:46:02.103441+00:00",
+  "mode": "shadow",
+  "risk_profile": "conservative",
+  "llama_mode": "off",
+  "results": [
+    {
+      "symbol": "ETHUSDT",
+      "market_source": "binance",
+      "timestamp": "2026-03-16T16:46:02.096433+00:00",
+      "price": 2290.23,
+      "returns": {
+        "5m": -0.01,
+        "1h": 0.239,
+        "4h": 0.334,
+        "24h": 9.499
+      },
+      "volatility": {
+        "atr_pct": 1.41,
+        "realized_24h": 3.616
+      },
+      "trend": {
+        "ema20": 2239.6253,
+        "ema50": 2180.7621,
+        "ema20_gt_ema50": true,
+        "rsi14": 73.842,
+        "trend_view": "bullish"
+      },
+      "volume": {
+        "vol_ratio": 0.439
+      },
+      "news_summary": {
+        "sentiment": "neutral",
+        "score": 0.0,
+        "confidence": 0.49,
+        "conflict": true
+      },
+      "news": [
+        {
+          "headline": "Ethereum Foundation’s new mandate sparks debate about its role, priorities",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/tech/2026/03/16/ethereum-foundation-s-new-mandate-sparks-debate-about-its-role-priorities"
+        },
+        {
+          "headline": "CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, leading index higher",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/coindesk-indices/2026/03/16/coindesk-20-performance-update-ethereum-eth-price-jumps-8-8-leading-index-higher"
+        },
+        {
+          "headline": "Bitmine buys 60,999 ether as Tom Lee touts crypto strength amid Iran war",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/business/2026/03/16/bitmine-buys-60-999-ether-as-tom-lee-touts-crypto-strength-amid-iran-war"
+        },
+        {
+          "headline": "Memecoins outpace bitcoin, ether as 'barbell strategy' wins out",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/daybook-us/2026/03/16/memecoins-outpace-bitcoin-ether-as-barbell-strategy-wins-out"
+        },
+        {
+          "headline": "XRP climbs 3% past $1.47 as breakout extends on broad bitcoin-led move",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/markets/2026/03/16/xrp-climbs-3-past-usd1-47-as-breakout-extends-on-broad-bitcoin-led-move"
+        },
+        {
+          "headline": "Bitcoin briefly tops $74,000 as ether, sol, ada gains as much as 6% in Monday surge",
+          "sentiment": "positive",
+          "score": 1.0,
+          "confidence": 0.65,
+          "link": "https://www.coindesk.com/markets/2026/03/16/bitcoin-tops-usd74-000-as-ether-sol-ada-gains-as-much-as-6-in-monday-surge"
+        }
+      ],
+      "decision": "watch",
+      "confidence": 0.664,
+      "risk_score": 53,
+      "risk_level": "high",
+      "trend_view": "bullish",
+      "thesis": [
+        "短線趨勢：bullish，RSI=73.8",
+        "24h波動=3.62% / ATR=1.41%",
+        "消息面=neutral (conf=0.49)",
+        "風險分解={'volatility': 15.1, 'liquidity': 11, 'news_uncertainty': 22, 'trend_conflict': 4, 'event_risk': 1}"
+      ],
+      "trade_plan": {
+        "entry_zone": [
+          2277.3131,
+          2287.0008
+        ],
+        "stop_loss": 2254.7085,
+        "take_profit": [
+          2341.8976,
+          2380.6483
+        ],
+        "max_risk_per_trade_pct": 0.8
+      },
+      "warnings": [
+        "消息方向衝突，維持保守倉位。"
+      ],
+      "model_source": "rule_engine",
+      "beginner_summary": {
+        "headline": "ETHUSDT：先觀望，不急著下單（風險高 53/100）",
+        "core_reason": "目前趨勢偏多，消息面中性，目前屬於橫盤。",
+        "now_action": "短線先等價格靠近短線執行區（做多） `2300.2328 ~ 2312.0028`，再看 5m 是否帶量突破，不要在中間觀望區追單。",
+        "reminder": "提醒價位：上破 `2312.0028` 才考慮偏多，下破 `2251.6574` 轉偏空防守。 短線執行區（做多） `2300.2328 ~ 2312.0028`；短線執行區（做空） `2251.6574 ~ 2263.4274`。",
+        "range_hint": "大區間：`2255.04 ~ 2308.54`；中間觀望區：`2271.09 ~ 2292.49`；預估出方向時間：約 6-18 小時（中）。",
+        "long_short_hint": "做多觸發 `2312.0028`；做空觸發 `2251.6574`；目前建議：短線偏多，優先等做多觸發。",
+        "stop_hint": "建議止損：做多若失守 `2279.7106` 就撤。 從上破價算，現貨止損約 `1.397%`。",
+        "leverage_hint": "現貨角度：上破價 `2312.0028`，止損 `2279.7106`，止損幅度約 `1.397%`。",
+        "short_bias_hint": "短線方向：`long`，強度：`high`。",
+        "avoid": [
+          "不要滿倉或重倉一次梭哈",
+          "不要不設停損",
+          "不要因為一根紅K就追單"
+        ]
+      },
+      "position_examples": {
+        "assumptions": {
+          "leverage": 20.0,
+          "account_allocation_pct": 50.0
+        },
+        "recommended_side": "long",
+        "reference_entry": 2312.0028,
+        "recommended_stop_loss": 2279.7106,
+        "recommended_take_profit_1": 2360.4412,
+        "recommended_take_profit_2": 2392.7334,
+        "to_stop_loss": {
+          "spot_move_pct": -1.397,
+          "position_roi_pct": -27.934,
+          "account_pnl_pct": -13.967
+        },
+        "to_take_profit_1": {
+          "spot_move_pct": 2.095,
+          "position_roi_pct": 41.902,
+          "account_pnl_pct": 20.951
+        },
+        "to_take_profit_2": {
+          "spot_move_pct": 3.492,
+          "position_roi_pct": 69.836,
+          "account_pnl_pct": 34.918
+        }
+      },
+      "market_state": {
+        "is_sideways": true,
+        "state": "sideways",
+        "range_4h": [
+          2255.04,
+          2308.54
+        ],
+        "range_pct_4h": 2.336
+      },
+      "actionable_levels": {
+        "range_low": 2255.04,
+        "range_high": 2308.54,
+        "breakout_up": 2312.0028,
+        "breakout_down": 2251.6574,
+        "long_ready_zone": [
+          2300.2328,
+          2312.0028
+        ],
+        "short_ready_zone": [
+          2251.6574,
+          2263.4274
+        ],
+        "noise_zone": [
+          2271.09,
+          2292.49
+        ],
+        "execution_band_pct": 0.514,
+        "timing_window": "約 6-18 小時",
+        "timing_confidence": "中",
+        "timing_reason": "區間震盪中，接近箱體邊界時容易出方向。"
+      },
+      "timeframe_view": {
+        "5m": {
+          "timeframe": "5m",
+          "trend": "bullish",
+          "rsi14": 54.07,
+          "ema_fast": 2284.8565,
+          "ema_slow": 2283.3796,
+          "range_pct_20bars": 1.282,
+          "return_1bar_pct": -0.054,
+          "return_6bar_pct": 0.229,
+          "volume_ratio": 0.096,
+          "vwap20": 2285.3188,
+          "above_vwap": true
+        },
+        "4h": {
+          "timeframe": "4h",
+          "trend": "bullish",
+          "rsi14": 90.36,
+          "ema_fast": 2163.8911,
+          "ema_slow": 2101.9408,
+          "range_pct_20bars": 10.782,
+          "return_1bar_pct": 0.719,
+          "return_6bar_pct": 8.362,
+          "volume_ratio": 0.189,
+          "vwap20": 2181.458,
+          "above_vwap": true
+        }
+      },
+      "long_short_plan": {
+        "direction_bias": "long_bias",
+        "recommendation": "短線偏多，優先等做多觸發。",
+        "timeframe_weight": "5m:70%, 4h:30%",
+        "tf_5m_trend": "bullish",
+        "tf_4h_trend": "bullish",
+        "signal_strength": "high",
+        "long_setup": {
+          "trigger_price": 2312.0028,
+          "entry_zone": [
+            2312.0028,
+            2323.3051
+          ],
+          "stop_loss": 2279.7106,
+          "take_profit": [
+            2360.4412,
+            2392.7334
+          ],
+          "condition": "5m 收線站上觸發價，且 volume_ratio > 1.2，且最近3根沒有假突破回落。"
+        },
+        "short_setup": {
+          "trigger_price": 2251.6574,
+          "entry_zone": [
+            2240.3551,
+            2251.6574
+          ],
+          "stop_loss": 2283.9496,
+          "take_profit": [
+            2203.219,
+            2170.9268
+          ],
+          "condition": "5m 收線跌破觸發價，且 volume_ratio > 1.2，且最近3根沒有假突破回落。"
+        }
+      },
+      "short_term_signal": {
+        "bias": "long",
+        "strength": "high",
+        "long_score": 5,
+        "short_score": 1,
+        "checks": {
+          "long": {
+            "5m_trend": true,
+            "5m_rsi": true,
+            "5m_above_vwap": true,
+            "5m_volume": false,
+            "4h_filter": true,
+            "no_false_breakout": true
+          },
+          "short": {
+            "5m_trend": false,
+            "5m_rsi": false,
+            "5m_below_vwap": false,
+            "5m_volume": false,
+            "4h_filter": false,
+            "no_false_breakout": true
+          }
+        },
+        "thesis": [
+          "5m 結構偏多，且 4h 未明顯反向。",
+          "5m 量能比=0.096, RSI=54.07, VWAP位置=上方"
+        ],
+        "reference_price": 2290.23,
+        "false_breakout": {
+          "false_breakout_up": false,
+          "false_breakout_down": false
+        }
+      }
+    }
+  ]
+}

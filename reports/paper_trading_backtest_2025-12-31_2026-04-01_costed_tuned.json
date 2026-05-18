@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-03-30T17:10:08.493442+00:00",
+  "start_date_utc": "2025-12-31",
+  "end_date_utc": "2026-04-01",
+  "total_orders": 52,
+  "status_counts": {
+    "canceled": 8,
+    "closed": 44
+  },
+  "type_counts": {
+    "breakout_touch_up": 43,
+    "effective_long_breakout": 5,
+    "breakout_touch_down": 4
+  },
+  "trades": 44,
+  "win_rate": 22.727272727272727,
+  "avg_pnl_pct": -0.49724859736775334,
+  "avg_realized_r": -0.28256180466055203,
+  "latest_equity": 8781.655470076892,
+  "created_event_counts": {
+    "breakout_touch_down": 4,
+    "effective_long_breakout": 5,
+    "breakout_touch_up": 43
+  },
+  "blocked_reason_counts": {
+    "max_symbol_positions": 76,
+    "daily_loss_limit": 168,
+    "drawdown_halt": 169
+  },
+  "eligible_events": [
+    "breakout_touch_down",
+    "breakout_touch_up",
+    "effective_long_breakout",
+    "effective_short_breakdown",
+    "second_breakdown_short",
+    "second_breakout_long"
+  ]
+}

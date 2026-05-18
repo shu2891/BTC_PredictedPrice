@@ -1,0 +1,13 @@
+[Unit]
+Description=check_price alert performance tracker
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/shu2891/check_price
+ExecStart=/usr/bin/python3 /home/shu2891/check_price/alert_performance_tracker.py --db-path /home/shu2891/check_price/alert_state.db --report-md /home/shu2891/check_price/提醒事件成效報告.md --loop-minutes 30
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

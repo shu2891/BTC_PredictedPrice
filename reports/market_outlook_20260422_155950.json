@@ -1,0 +1,2055 @@
+{
+  "generated_at": "2026-04-22T15:59:50.435669+00:00",
+  "risk_profile": "conservative",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "XRPUSDT",
+    "SOLUSDT"
+  ],
+  "results": [
+    {
+      "symbol": "BTCUSDT",
+      "market_source": "binance",
+      "timestamp": "2026-04-22T15:59:48.639601+00:00",
+      "price": 79272.9,
+      "returns": {
+        "5m": -0.16,
+        "1h": 0.287,
+        "4h": 1.243,
+        "24h": 4.534
+      },
+      "volatility": {
+        "atr_pct": 0.612,
+        "realized_24h": 1.905
+      },
+      "trend": {
+        "ema20": 77766.6109,
+        "ema50": 76826.5168,
+        "ema20_gt_ema50": true,
+        "rsi14": 95.198,
+        "trend_view": "bullish"
+      },
+      "volume": {
+        "vol_ratio": 1.699
+      },
+      "news_summary": {
+        "sentiment": "neutral",
+        "score": 0.176,
+        "confidence": 0.49,
+        "conflict": true,
+        "macro_bias": "risk_off",
+        "macro_confidence": 0.9,
+        "macro_conflict": true,
+        "event_risk_level": "high",
+        "event_risk_score": 10,
+        "expires_hours": 12,
+        "key_event_headlines": [
+          "Bitcoin tests $78,000 resistance as short-squeeze risks mount, altcoins rally",
+          "Prediction markets are the new secret weapon for Coinbase and Robinhood growth",
+          "Lazarus-linked macOS malware hits crypto and fintech firms"
+        ]
+      },
+      "news": [
+        {
+          "headline": "Bitcoin breaks Strategy's STRC ex-dividend date slump for the first time in six months",
+          "sentiment": "positive",
+          "score": 1.0,
+          "confidence": 0.55,
+          "link": "https://www.coindesk.com/markets/2026/04/22/bitcoin-rises-a-week-after-strc-s-dividend-payout-a-first-in-six-months"
+        },
+        {
+          "headline": "Bitcoin tops $79,000 as crypto rally gathers steam; Circle, Coinbase, Strategy lead",
+          "sentiment": "positive",
+          "score": 1.0,
+          "confidence": 0.55,
+          "link": "https://www.coindesk.com/markets/2026/04/22/bitcoin-tops-usd79-000-as-crypto-rally-gathers-steam-circle-coinbase-strategy-lead"
+        },
+        {
+          "headline": "Crypto giant GSR launches its first ETF to give investors an easy way to bet on the big 3 tokens",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/markets/2026/04/21/crypto-giant-gsr-launches-its-first-etf-to-give-investors-an-easy-way-to-bet-on-the-big-3-tokens"
+        },
+        {
+          "headline": "Tax-free bitcoin is back: How UK investors can avoid paying duty on crypto investments once more",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/business/2026/04/22/tax-free-bitcoin-is-back-how-uk-investors-can-avoid-paying-duty-on-crypto-investments-once-more"
+        },
+        {
+          "headline": "The signal bitcoin momentum traders have been waiting for is here",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/daybook-us/2026/04/22/the-signal-bitcoin-momentum-traders-have-been-waiting-for-is-here"
+        },
+        {
+          "headline": "Bitcoin tests $78,000 resistance as short-squeeze risks mount, altcoins rally",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.85,
+          "link": "https://www.coindesk.com/markets/2026/04/22/bitcoin-tests-usd78-000-resistance-as-short-squeeze-risks-mount-altcoins-rally"
+        }
+      ],
+      "onchain_summary": {
+        "enabled": false,
+        "available": false,
+        "provider": "coinmetrics",
+        "asset": "btc",
+        "bias": "neutral",
+        "confidence": "low",
+        "summary": [
+          "未設定 COINMETRICS_API_KEY，鏈上分析已停用。"
+        ],
+        "metrics": {}
+      },
+      "funding_summary": {
+        "enabled": true,
+        "available": true,
+        "provider": "binance_futures",
+        "symbol": "BTCUSDT",
+        "signal": "NORMAL",
+        "bias": "neutral",
+        "current_rate": -6.77e-06,
+        "current_rate_pct": -0.0007,
+        "avg_recent_rate": -5.108e-05,
+        "avg_recent_rate_pct": -0.0051,
+        "summary": [
+          "Funding 中性，暫不干擾方向。",
+          "當前 Funding -0.0007% / 近期均值 -0.0051%"
+        ]
+      },
+      "decision": "watch",
+      "confidence": 0.782,
+      "risk_score": 27,
+      "risk_level": "medium",
+      "trend_view": "bullish",
+      "thesis": [
+        "短線趨勢：bullish，RSI=95.2",
+        "24h波動=1.91% / ATR=0.61%",
+        "風險分解={'volatility': 8.9, 'liquidity': 3, 'news_uncertainty': 0, 'trend_conflict': 14, 'event_risk': 1, 'news_event_overlay': 0.0}"
+      ],
+      "trade_plan": {
+        "entry_zone": [
+          79078.8399,
+          79224.385
+        ],
+        "stop_loss": 78739.2348,
+        "take_profit": [
+          80049.1402,
+          80631.3204
+        ],
+        "max_risk_per_trade_pct": 0.8
+      },
+      "warnings": [
+        "BTCUSDT 處於 bull_trend，暫停逆勢做空確認訊號。"
+      ],
+      "model_source": "rule_engine",
+      "beginner_summary": {
+        "headline": "BTCUSDT：先觀望，不急著下單（風險中 27/100）",
+        "core_reason": "目前趨勢偏多，目前不在明顯橫盤。",
+        "now_action": "如果要走上方劇本，先等價格靠近短線執行區（做多） `79252.2674 ~ 79519.1`，再看 5m 是否帶量突破，不要在中間觀望區追單。",
+        "reminder": "提醒價位：上破 `79519.1` 代表上方劇本開始成立，下破 `77996.8689` 代表下方劇本開始成立。 短線執行區（做多） `79252.2674 ~ 79519.1`；短線執行區（做空） `77996.8689 ~ 78263.7015`。",
+        "range_hint": "大區間：`78114.04 ~ 79400.0`；中間觀望區：`78499.828 ~ 79014.212`；預估出方向時間：約 1-8 小時（中高）。",
+        "phase_hint": "目前階段：箱體上緣。價格靠近箱體上緣，容易在上破前先震盪。",
+        "path_map_hint": "第一支撐 `79014.212 ~ 79400.0`；第二支撐 `78114.04 ~ 78499.828`；第一壓力 `79252.2674 ~ 79519.1`；第二壓力 `81421.6496 ~ 81421.6496`。",
+        "break_path_hint": "若跌回 `79014.2120` 下方，下一支撐看 `78114.0400 ~ 78499.8280`。 若站上 `79519.1000`，下一壓力看 `81421.6496`。 若仍在橫盤，粗略時間窗先看 約 1-8 小時（中高），但時間只供參考，價位優先。",
+        "protection_hint": "保護層：BTCUSDT 處於 bull_trend，暫停逆勢做空確認訊號。",
+        "long_short_hint": "做多觸發 `79519.1`；做空觸發 `77996.8689`；目前劇本：偏多，若上破並站穩 1h 結構，可規劃波段多單。",
+        "executor_hint": "做多執行：`stop_market`，RR(TP1) `1.147`，品質 `tradable`，未成交約 `240` 分鐘後取消。 做空執行：`stop_market`，RR(TP1) `1.147`，品質 `tradable`，未成交約 `240` 分鐘後取消。",
+        "execution_hint": "做多：第一次突破看 `79519.1`，回踩確認區 `79349.2974 ~ 79549.6645`，第二次突破價 `79875.8281`。 做空：第一次跌破看 `77996.8689`，反抽確認區 `77966.3045 ~ 78166.6715`，第二次跌破價 `77640.1408`。",
+        "stop_hint": "建議止損：做多若失守 `78528.1888` 就撤。 從上破價算，現貨止損約 `1.246%`。",
+        "exit_hint": "短線出場：價格到 `80787.4664` 後，止損可上移到保本 `79519.1`；分批止盈區 `81104.558 ~ 81738.7412`；續抱區 `81897.287 ~ 83086.3805`。",
+        "leverage_hint": "現貨角度：上破價 `79519.1`，止損 `78528.1888`，止損幅度約 `1.246%`。",
+        "short_bias_hint": "短線方向：`long`，強度：`high`，市場狀態：`bull_trend`。",
+        "avoid": [
+          "不要滿倉或重倉一次梭哈",
+          "不要不設停損",
+          "不要因為一根紅K就追單"
+        ]
+      },
+      "position_examples": {
+        "assumptions": {
+          "leverage": 20.0,
+          "account_allocation_pct": 50.0
+        },
+        "recommended_side": "long",
+        "reference_entry": 79519.1,
+        "recommended_stop_loss": 78528.1888,
+        "recommended_take_profit_1": 81421.6496,
+        "recommended_take_profit_2": 82531.4702,
+        "move_stop_to_breakeven_at": 80787.4664,
+        "breakeven_stop_price": 79519.1,
+        "scale_out_zone": [
+          81104.558,
+          81738.7412
+        ],
+        "runner_zone": [
+          81897.287,
+          83086.3805
+        ],
+        "to_stop_loss": {
+          "spot_move_pct": -1.246,
+          "position_roi_pct": -24.923,
+          "account_pnl_pct": -12.461
+        },
+        "to_take_profit_1": {
+          "spot_move_pct": 2.393,
+          "position_roi_pct": 47.851,
+          "account_pnl_pct": 23.926
+        },
+        "to_take_profit_2": {
+          "spot_move_pct": 3.788,
+          "position_roi_pct": 75.765,
+          "account_pnl_pct": 37.882
+        }
+      },
+      "market_state": {
+        "is_sideways": false,
+        "state": "trending",
+        "range_4h": [
+          78114.04,
+          79400.0
+        ],
+        "range_pct_4h": 1.622
+      },
+      "actionable_levels": {
+        "range_low": 78114.04,
+        "range_high": 79400.0,
+        "breakout_up": 79519.1,
+        "breakout_down": 77996.8689,
+        "long_ready_zone": [
+          79252.2674,
+          79519.1
+        ],
+        "short_ready_zone": [
+          77996.8689,
+          78263.7015
+        ],
+        "long_retest_zone": [
+          79349.2974,
+          79549.6645
+        ],
+        "short_retest_zone": [
+          77966.3045,
+          78166.6715
+        ],
+        "noise_zone": [
+          78499.828,
+          79014.212
+        ],
+        "execution_band_pct": 0.337,
+        "timing_window": "約 1-8 小時",
+        "timing_confidence": "中高",
+        "timing_reason": "已出現趨勢動能，短時間續行或回檔機率較高。",
+        "price_map": {
+          "phase": "箱體上緣",
+          "phase_reason": "價格靠近箱體上緣，容易在上破前先震盪。",
+          "primary_support": [
+            79014.212,
+            79400.0
+          ],
+          "secondary_support": [
+            78114.04,
+            78499.828
+          ],
+          "primary_resistance": [
+            79252.2674,
+            79519.1
+          ],
+          "secondary_resistance": [
+            81421.6496,
+            81421.6496
+          ],
+          "if_break_down": "若跌回 `79014.2120` 下方，下一支撐看 `78114.0400 ~ 78499.8280`。",
+          "if_break_up": "若站上 `79519.1000`，下一壓力看 `81421.6496`。",
+          "timing_note": "若仍在橫盤，粗略時間窗先看 約 1-8 小時（中高），但時間只供參考，價位優先。"
+        }
+      },
+      "timeframe_view": {
+        "5m": {
+          "timeframe": "5m",
+          "trend": "bullish",
+          "rsi14": 71.08,
+          "ema_fast": 79201.8253,
+          "ema_slow": 79039.4423,
+          "range_pct_20bars": 1.037,
+          "return_1bar_pct": -0.16,
+          "return_6bar_pct": 0.259,
+          "volume_ratio": 0.559,
+          "vwap20": 79013.2368,
+          "above_vwap": true
+        },
+        "15m": {
+          "timeframe": "15m",
+          "trend": "bullish",
+          "rsi14": 76.99,
+          "ema_fast": 78716.6898,
+          "ema_slow": 78147.622,
+          "range_pct_20bars": 1.637,
+          "return_1bar_pct": -0.009,
+          "return_6bar_pct": 0.335,
+          "volume_ratio": 0.798,
+          "vwap20": 78728.9957,
+          "above_vwap": true
+        },
+        "1h": {
+          "timeframe": "1h",
+          "trend": "bullish",
+          "rsi14": 95.2,
+          "ema_fast": 77766.6109,
+          "ema_slow": 76826.5168,
+          "range_pct_20bars": 5.591,
+          "return_1bar_pct": 0.287,
+          "return_6bar_pct": 1.629,
+          "volume_ratio": 1.665,
+          "vwap20": 77809.5011,
+          "above_vwap": true
+        },
+        "4h": {
+          "timeframe": "4h",
+          "trend": "bullish",
+          "rsi14": 76.19,
+          "ema_fast": 76541.2659,
+          "ema_slow": 75396.149,
+          "range_pct_20bars": 7.16,
+          "return_1bar_pct": 1.243,
+          "return_6bar_pct": 4.534,
+          "volume_ratio": 2.045,
+          "vwap20": 76252.3972,
+          "above_vwap": true
+        }
+      },
+      "long_short_plan": {
+        "analysis_bias": "long_bias",
+        "direction_bias": "long_bias",
+        "recommendation": "偏多，若上破並站穩 1h 結構，可規劃波段多單。",
+        "timeframe_weight": "4h:45%, 1h:35%, 15m:20%",
+        "tf_1h_trend": "bullish",
+        "tf_4h_trend": "bullish",
+        "signal_strength": "high",
+        "execution_readiness": "ready",
+        "execution_readiness_label": "可開始規劃",
+        "preferred_setup": "long",
+        "trigger_distance": {
+          "long": {
+            "distance_abs": 246.2,
+            "distance_pct": 0.311,
+            "distance_atr": 0.311,
+            "readiness": "ready"
+          },
+          "short": {
+            "distance_abs": 1276.0311,
+            "distance_pct": 1.61,
+            "distance_atr": 1.61,
+            "readiness": "caution"
+          },
+          "preferred": {
+            "distance_abs": 246.2,
+            "distance_pct": 0.311,
+            "distance_atr": 0.311,
+            "readiness": "ready"
+          }
+        },
+        "confirmation_priority": "swing_breakout_retest",
+        "swing_mtf_bias": "long",
+        "funding_bias": "neutral",
+        "onchain_bias": "neutral",
+        "long_setup": {
+          "trigger_price": 79519.1,
+          "entry_zone": [
+            79519.1,
+            79955.101
+          ],
+          "stop_loss": 78528.1888,
+          "take_profit": [
+            81421.6496,
+            82531.4702
+          ],
+          "condition": "1h 結構轉強，4h 不逆勢，等波段突破成立。",
+          "setup_type": "波段轉強",
+          "confirmation": {
+            "first_breakout_watch": 79519.1,
+            "retest_zone": [
+              79349.2974,
+              79549.6645
+            ],
+            "second_breakout_trigger": 79875.8281,
+            "retest_failure_level": 78845.2804,
+            "notes": "先看 1h 站穩，再等回踩確認或第二次突破。"
+          },
+          "management": {
+            "breakeven_trigger": 80787.4664,
+            "breakeven_stop": 79519.1,
+            "scale_out_zone": [
+              81104.558,
+              81738.7412
+            ],
+            "runner_zone": [
+              81897.287,
+              83086.3805
+            ],
+            "notes": "先收部分獲利，剩餘部位看趨勢續抱。"
+          },
+          "executor_plan": {
+            "order_type": "stop_market",
+            "entry_trigger": 79875.8281,
+            "cancel_after_minutes": 240,
+            "risk_pct": 1.687,
+            "reward_tp1_pct": 1.935,
+            "reward_tp2_pct": 3.325,
+            "rr_to_tp1": 1.147,
+            "rr_to_tp2": 1.971,
+            "quality": "tradable",
+            "notes": []
+          }
+        },
+        "short_setup": {
+          "trigger_price": 77996.8689,
+          "entry_zone": [
+            77560.8679,
+            77996.8689
+          ],
+          "stop_loss": 78987.7802,
+          "take_profit": [
+            76094.3193,
+            74984.4987
+          ],
+          "condition": "1h 結構轉弱，4h 不逆勢，等波段跌破成立。",
+          "setup_type": "波段轉弱",
+          "confirmation": {
+            "first_breakout_watch": 77996.8689,
+            "retest_zone": [
+              77966.3045,
+              78166.6715
+            ],
+            "second_breakout_trigger": 77640.1408,
+            "retest_failure_level": 78670.6886,
+            "notes": "先看 1h 跌破，再等反抽失敗或第二次跌破。"
+          },
+          "management": {
+            "breakeven_trigger": 76728.5025,
+            "breakeven_stop": 77996.8689,
+            "scale_out_zone": [
+              75777.2277,
+              76411.4109
+            ],
+            "runner_zone": [
+              74429.5884,
+              75618.6819
+            ],
+            "notes": "先收部分獲利，剩餘部位看趨勢續抱。"
+          },
+          "executor_plan": {
+            "order_type": "stop_market",
+            "entry_trigger": 77640.1408,
+            "cancel_after_minutes": 240,
+            "risk_pct": 1.736,
+            "reward_tp1_pct": 1.991,
+            "reward_tp2_pct": 3.42,
+            "rr_to_tp1": 1.147,
+            "rr_to_tp2": 1.971,
+            "quality": "tradable",
+            "notes": []
+          }
+        }
+      },
+      "short_term_signal": {
+        "bias": "long",
+        "strength": "high",
+        "long_score": 16,
+        "short_score": 6,
+        "long_core_score": 6,
+        "short_core_score": 2,
+        "long_micro_score": 3,
+        "short_micro_score": 2,
+        "market_regime": "bull_trend",
+        "swing_mtf_score": 91.22,
+        "swing_mtf_bias": "long",
+        "long_threshold": 8,
+        "short_threshold": 9,
+        "gate_open": {
+          "long": true,
+          "short": false
+        },
+        "checks": {
+          "long_core": {
+            "4h_trend": true,
+            "1h_trend": true,
+            "24h_return": true,
+            "1h_above_vwap": true,
+            "onchain_not_bearish": true,
+            "funding_not_bearish": true
+          },
+          "short_core": {
+            "4h_trend": false,
+            "1h_trend": false,
+            "24h_return": false,
+            "1h_below_vwap": false,
+            "onchain_not_bullish": true,
+            "funding_not_bullish": true
+          },
+          "long_micro": {
+            "1h_rsi": false,
+            "1h_volume": true,
+            "4h_return": true,
+            "no_false_breakout": true
+          },
+          "short_micro": {
+            "1h_rsi": false,
+            "1h_volume": true,
+            "4h_return": false,
+            "no_false_breakout": true
+          }
+        },
+        "thesis": [
+          "4h 與 1h 同步偏多，優先看上方波段延續。",
+          "市場狀態 bull_trend；核心 long 6/6、short 2/6；1h 微結構 long 3/4、short 2/4。",
+          "1h 量比 1.665、RSI 95.2、VWAP 上方。",
+          "swing_mtf_score 91.22 / 偏向 long",
+          "Funding -0.0007% / avg -0.0051% / neutral"
+        ],
+        "reference_price": 79272.9,
+        "false_breakout": {
+          "false_breakout_up": false,
+          "false_breakout_down": false
+        },
+        "strategy_style": "swing",
+        "timeframe_anchor": "1h/4h",
+        "onchain_bias": "neutral",
+        "funding_bias": "neutral",
+        "funding_available": true,
+        "funding_signal": "NORMAL"
+      },
+      "protections": {
+        "active": true,
+        "pause_long": false,
+        "pause_short": true,
+        "hard_block": false,
+        "blocks_new_entries": false,
+        "rules": [
+          {
+            "code": "countertrend_short_pause",
+            "scope": "short",
+            "summary": "BTCUSDT 處於 bull_trend，暫停逆勢做空確認訊號。"
+          }
+        ],
+        "summaries": [
+          "BTCUSDT 處於 bull_trend，暫停逆勢做空確認訊號。"
+        ],
+        "status": "guarded"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "market_source": "binance",
+      "timestamp": "2026-04-22T15:59:49.410435+00:00",
+      "price": 2403.0,
+      "returns": {
+        "5m": -0.302,
+        "1h": -0.007,
+        "4h": 0.19,
+        "24h": 4.015
+      },
+      "volatility": {
+        "atr_pct": 0.868,
+        "realized_24h": 2.465
+      },
+      "trend": {
+        "ema20": 2375.7639,
+        "ema50": 2348.9511,
+        "ema20_gt_ema50": true,
+        "rsi14": 78.497,
+        "trend_view": "bullish"
+      },
+      "volume": {
+        "vol_ratio": 1.861
+      },
+      "news_summary": {
+        "sentiment": "neutral",
+        "score": 0.0,
+        "confidence": 0.4,
+        "conflict": false,
+        "macro_bias": "risk_off",
+        "macro_confidence": 0.9,
+        "macro_conflict": true,
+        "event_risk_level": "high",
+        "event_risk_score": 10,
+        "expires_hours": 12,
+        "key_event_headlines": [
+          "Bitcoin tests $78,000 resistance as short-squeeze risks mount, altcoins rally",
+          "Prediction markets are the new secret weapon for Coinbase and Robinhood growth",
+          "Lazarus-linked macOS malware hits crypto and fintech firms"
+        ]
+      },
+      "news": [
+        {
+          "headline": "Crypto giant GSR launches its first ETF to give investors an easy way to bet on the big 3 tokens",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/markets/2026/04/21/crypto-giant-gsr-launches-its-first-etf-to-give-investors-an-easy-way-to-bet-on-the-big-3-tokens"
+        },
+        {
+          "headline": "Tax-free bitcoin is back: How UK investors can avoid paying duty on crypto investments once more",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/business/2026/04/22/tax-free-bitcoin-is-back-how-uk-investors-can-avoid-paying-duty-on-crypto-investments-once-more"
+        },
+        {
+          "headline": "Flight to safety: How Maker’s Spark and USDC are winning the $10 billion Aave breakup",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/markets/2026/04/22/aave-s-usdtvl-slump-sends-capital-to-spark-lido-while-usdc-becomes-a-parking-spot"
+        },
+        {
+          "headline": "Traders don’t see Kelp socializing losses after $292 million exploit",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/markets/2026/04/22/traders-don-t-see-kelp-socializing-losses-after-usd292-million-exploit"
+        },
+        {
+          "headline": "A $575 bet on a Shiba-themed token became $1.17 million in 5 days",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/markets/2026/04/22/a-usd575-bet-on-a-token-inspired-by-a-cancer-patient-s-space-shiba-became-usd1-17-million-in-5-days"
+        },
+        {
+          "headline": "Aave deposits fall by $15B as Kelp exploit sparks flight from DeFi lender",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://cointelegraph.com/news/aave-deposits-drop-15b-kelp-dao-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        }
+      ],
+      "onchain_summary": {
+        "enabled": false,
+        "available": false,
+        "provider": "coinmetrics",
+        "asset": "eth",
+        "bias": "neutral",
+        "confidence": "low",
+        "summary": [
+          "未設定 COINMETRICS_API_KEY，鏈上分析已停用。"
+        ],
+        "metrics": {}
+      },
+      "funding_summary": {
+        "enabled": true,
+        "available": true,
+        "provider": "binance_futures",
+        "symbol": "ETHUSDT",
+        "signal": "NORMAL",
+        "bias": "neutral",
+        "current_rate": 7.954e-05,
+        "current_rate_pct": 0.008,
+        "avg_recent_rate": -5.44e-05,
+        "avg_recent_rate_pct": -0.0054,
+        "summary": [
+          "Funding 中性，暫不干擾方向。",
+          "當前 Funding 0.0080% / 近期均值 -0.0054%"
+        ]
+      },
+      "decision": "scale_in_test",
+      "confidence": 0.773,
+      "risk_score": 29,
+      "risk_level": "medium",
+      "trend_view": "bullish",
+      "thesis": [
+        "短線趨勢：bullish，RSI=78.5",
+        "24h波動=2.46% / ATR=0.87%",
+        "風險分解={'volatility': 10.93, 'liquidity': 3, 'news_uncertainty': 0, 'trend_conflict': 14, 'event_risk': 1, 'news_event_overlay': 0.0}"
+      ],
+      "trade_plan": {
+        "entry_zone": [
+          2394.6568,
+          2400.9142
+        ],
+        "stop_loss": 2380.0562,
+        "take_profit": [
+          2436.3729,
+          2461.4025
+        ],
+        "max_risk_per_trade_pct": 0.8
+      },
+      "warnings": [],
+      "model_source": "rule_engine",
+      "beginner_summary": {
+        "headline": "ETHUSDT：可小額分批試單（風險中 29/100）",
+        "core_reason": "目前趨勢偏多，目前屬於橫盤。",
+        "now_action": "若要執行，請用小額分批：參考進場區 [2394.6568, 2400.9142]，並先寫好停損 2380.0562。",
+        "reminder": "提醒價位：上破 `2427.3856` 代表上方劇本開始成立，下破 `2387.3137` 代表下方劇本開始成立。 短線執行區（做多） `2420.1586 ~ 2427.3856`；短線執行區（做空） `2387.3137 ~ 2394.5406`。",
+        "range_hint": "大區間：`2390.9 ~ 2423.75`；中間觀望區：`2400.755 ~ 2413.895`；預估出方向時間：約 6-18 小時（中）。",
+        "phase_hint": "目前階段：橫盤中段。價格仍在箱體中央，先看上下破再決定方向。",
+        "path_map_hint": "第一支撐 `2387.3137 ~ 2394.5406`；第二支撐 `2390.9 ~ 2400.755`；第一壓力 `2420.1586 ~ 2427.3856`；第二壓力 `2413.895 ~ 2423.75`。",
+        "break_path_hint": "若跌破 `2387.3137`，下一支撐先看 `2329.6417`，再看 `2295.9997`。 若站上 `2427.3856`，下一壓力先看 `2485.0576`，再看 `2518.6996`。 若仍在橫盤，粗略時間窗先看 約 6-18 小時（中），但時間只供參考，價位優先。",
+        "protection_hint": "保護層：目前未啟動。",
+        "long_short_hint": "做多觸發 `2427.3856`；做空觸發 `2387.3137`；目前劇本：偏多，若上破並站穩 1h 結構，可規劃波段多單。",
+        "executor_hint": "做多執行：`stop_market`，RR(TP1) `1.147`，品質 `tradable`，未成交約 `240` 分鐘後取消。 做空執行：`stop_market`，RR(TP1) `1.147`，品質 `tradable`，未成交約 `240` 分鐘後取消。",
+        "execution_hint": "做多：第一次突破看 `2427.3856`，回踩確認區 `2422.7866 ~ 2428.2134`，第二次突破價 `2438.1991`。 做空：第一次跌破看 `2387.3137`，反抽確認區 `2386.4858 ~ 2391.9127`，第二次跌破價 `2376.5002`。",
+        "stop_hint": "建議止損：做多若失守 `2397.3481` 就撤。 從上破價算，現貨止損約 `1.237%`。",
+        "exit_hint": "短線出場：價格到 `2465.8336` 後，止損可上移到保本 `2427.3856`；分批止盈區 `2475.4456 ~ 2494.6696`；續抱區 `2499.4756 ~ 2535.5206`。",
+        "leverage_hint": "現貨角度：上破價 `2427.3856`，止損 `2397.3481`，止損幅度約 `1.237%`。",
+        "short_bias_hint": "短線方向：`long`，強度：`high`，市場狀態：`range_or_mixed`。",
+        "avoid": [
+          "不要滿倉或重倉一次梭哈",
+          "不要不設停損",
+          "不要因為一根紅K就追單"
+        ]
+      },
+      "position_examples": {
+        "assumptions": {
+          "leverage": 20.0,
+          "account_allocation_pct": 50.0
+        },
+        "recommended_side": "long",
+        "reference_entry": 2427.3856,
+        "recommended_stop_loss": 2397.3481,
+        "recommended_take_profit_1": 2485.0576,
+        "recommended_take_profit_2": 2518.6996,
+        "move_stop_to_breakeven_at": 2465.8336,
+        "breakeven_stop_price": 2427.3856,
+        "scale_out_zone": [
+          2475.4456,
+          2494.6696
+        ],
+        "runner_zone": [
+          2499.4756,
+          2535.5206
+        ],
+        "to_stop_loss": {
+          "spot_move_pct": -1.237,
+          "position_roi_pct": -24.749,
+          "account_pnl_pct": -12.374
+        },
+        "to_take_profit_1": {
+          "spot_move_pct": 2.376,
+          "position_roi_pct": 47.518,
+          "account_pnl_pct": 23.759
+        },
+        "to_take_profit_2": {
+          "spot_move_pct": 3.762,
+          "position_roi_pct": 75.237,
+          "account_pnl_pct": 37.618
+        }
+      },
+      "market_state": {
+        "is_sideways": true,
+        "state": "sideways",
+        "range_4h": [
+          2390.9,
+          2423.75
+        ],
+        "range_pct_4h": 1.367
+      },
+      "actionable_levels": {
+        "range_low": 2390.9,
+        "range_high": 2423.75,
+        "breakout_up": 2427.3856,
+        "breakout_down": 2387.3137,
+        "long_ready_zone": [
+          2420.1586,
+          2427.3856
+        ],
+        "short_ready_zone": [
+          2387.3137,
+          2394.5406
+        ],
+        "long_retest_zone": [
+          2422.7866,
+          2428.2134
+        ],
+        "short_retest_zone": [
+          2386.4858,
+          2391.9127
+        ],
+        "noise_zone": [
+          2400.755,
+          2413.895
+        ],
+        "execution_band_pct": 0.301,
+        "timing_window": "約 6-18 小時",
+        "timing_confidence": "中",
+        "timing_reason": "區間震盪中，接近箱體邊界時容易出方向。",
+        "price_map": {
+          "phase": "橫盤中段",
+          "phase_reason": "價格仍在箱體中央，先看上下破再決定方向。",
+          "primary_support": [
+            2387.3137,
+            2394.5406
+          ],
+          "secondary_support": [
+            2390.9,
+            2400.755
+          ],
+          "primary_resistance": [
+            2420.1586,
+            2427.3856
+          ],
+          "secondary_resistance": [
+            2413.895,
+            2423.75
+          ],
+          "if_break_down": "若跌破 `2387.3137`，下一支撐先看 `2329.6417`，再看 `2295.9997`。",
+          "if_break_up": "若站上 `2427.3856`，下一壓力先看 `2485.0576`，再看 `2518.6996`。",
+          "timing_note": "若仍在橫盤，粗略時間窗先看 約 6-18 小時（中），但時間只供參考，價位優先。"
+        }
+      },
+      "timeframe_view": {
+        "5m": {
+          "timeframe": "5m",
+          "trend": "bullish",
+          "rsi14": 52.22,
+          "ema_fast": 2405.4055,
+          "ema_slow": 2404.8879,
+          "range_pct_20bars": 1.199,
+          "return_1bar_pct": -0.302,
+          "return_6bar_pct": 0.167,
+          "volume_ratio": 0.354,
+          "vwap20": 2402.0175,
+          "above_vwap": true
+        },
+        "15m": {
+          "timeframe": "15m",
+          "trend": "bullish",
+          "rsi14": 52.8,
+          "ema_fast": 2402.5581,
+          "ema_slow": 2388.309,
+          "range_pct_20bars": 1.55,
+          "return_1bar_pct": -0.372,
+          "return_6bar_pct": -0.346,
+          "volume_ratio": 0.412,
+          "vwap20": 2404.6463,
+          "above_vwap": false
+        },
+        "1h": {
+          "timeframe": "1h",
+          "trend": "bullish",
+          "rsi14": 78.5,
+          "ema_fast": 2375.7639,
+          "ema_slow": 2348.9511,
+          "range_pct_20bars": 5.315,
+          "return_1bar_pct": -0.007,
+          "return_6bar_pct": 0.649,
+          "volume_ratio": 1.838,
+          "vwap20": 2379.0372,
+          "above_vwap": true
+        },
+        "4h": {
+          "timeframe": "4h",
+          "trend": "bullish",
+          "rsi14": 77.62,
+          "ema_fast": 2343.5785,
+          "ema_slow": 2323.6455,
+          "range_pct_20bars": 7.117,
+          "return_1bar_pct": 0.19,
+          "return_6bar_pct": 4.015,
+          "volume_ratio": 2.069,
+          "vwap20": 2330.6839,
+          "above_vwap": true
+        }
+      },
+      "long_short_plan": {
+        "analysis_bias": "long_bias",
+        "direction_bias": "long_bias",
+        "recommendation": "偏多，若上破並站穩 1h 結構，可規劃波段多單。",
+        "timeframe_weight": "4h:45%, 1h:35%, 15m:20%",
+        "tf_1h_trend": "bullish",
+        "tf_4h_trend": "bullish",
+        "signal_strength": "high",
+        "execution_readiness": "ready",
+        "execution_readiness_label": "可開始規劃",
+        "preferred_setup": "long",
+        "trigger_distance": {
+          "long": {
+            "distance_abs": 24.3856,
+            "distance_pct": 1.015,
+            "distance_atr": 1.015,
+            "readiness": "ready"
+          },
+          "short": {
+            "distance_abs": 15.6863,
+            "distance_pct": 0.653,
+            "distance_atr": 0.653,
+            "readiness": "ready"
+          },
+          "preferred": {
+            "distance_abs": 24.3856,
+            "distance_pct": 1.015,
+            "distance_atr": 1.015,
+            "readiness": "ready"
+          }
+        },
+        "confirmation_priority": "swing_breakout_retest",
+        "swing_mtf_bias": "long",
+        "funding_bias": "neutral",
+        "onchain_bias": "neutral",
+        "long_setup": {
+          "trigger_price": 2427.3856,
+          "entry_zone": [
+            2427.3856,
+            2440.6021
+          ],
+          "stop_loss": 2397.3481,
+          "take_profit": [
+            2485.0576,
+            2518.6996
+          ],
+          "condition": "1h 結構轉強，4h 不逆勢，等波段突破成立。",
+          "setup_type": "波段轉強",
+          "confirmation": {
+            "first_breakout_watch": 2427.3856,
+            "retest_zone": [
+              2422.7866,
+              2428.2134
+            ],
+            "second_breakout_trigger": 2438.1991,
+            "retest_failure_level": 2406.9601,
+            "notes": "先看 1h 站穩，再等回踩確認或第二次突破。"
+          },
+          "management": {
+            "breakeven_trigger": 2465.8336,
+            "breakeven_stop": 2427.3856,
+            "scale_out_zone": [
+              2475.4456,
+              2494.6696
+            ],
+            "runner_zone": [
+              2499.4756,
+              2535.5206
+            ],
+            "notes": "先收部分獲利，剩餘部位看趨勢續抱。"
+          },
+          "executor_plan": {
+            "order_type": "stop_market",
+            "entry_trigger": 2438.1991,
+            "cancel_after_minutes": 240,
+            "risk_pct": 1.675,
+            "reward_tp1_pct": 1.922,
+            "reward_tp2_pct": 3.302,
+            "rr_to_tp1": 1.147,
+            "rr_to_tp2": 1.971,
+            "quality": "tradable",
+            "notes": []
+          }
+        },
+        "short_setup": {
+          "trigger_price": 2387.3137,
+          "entry_zone": [
+            2374.0972,
+            2387.3137
+          ],
+          "stop_loss": 2417.3512,
+          "take_profit": [
+            2329.6417,
+            2295.9997
+          ],
+          "condition": "1h 結構轉弱，4h 不逆勢，等波段跌破成立。",
+          "setup_type": "波段轉弱",
+          "confirmation": {
+            "first_breakout_watch": 2387.3137,
+            "retest_zone": [
+              2386.4858,
+              2391.9127
+            ],
+            "second_breakout_trigger": 2376.5002,
+            "retest_failure_level": 2407.7392,
+            "notes": "先看 1h 跌破，再等反抽失敗或第二次跌破。"
+          },
+          "management": {
+            "breakeven_trigger": 2348.8657,
+            "breakeven_stop": 2387.3137,
+            "scale_out_zone": [
+              2320.0297,
+              2339.2537
+            ],
+            "runner_zone": [
+              2279.1787,
+              2315.2237
+            ],
+            "notes": "先收部分獲利，剩餘部位看趨勢續抱。"
+          },
+          "executor_plan": {
+            "order_type": "stop_market",
+            "entry_trigger": 2376.5002,
+            "cancel_after_minutes": 240,
+            "risk_pct": 1.719,
+            "reward_tp1_pct": 1.972,
+            "reward_tp2_pct": 3.387,
+            "rr_to_tp1": 1.147,
+            "rr_to_tp2": 1.971,
+            "quality": "tradable",
+            "notes": []
+          }
+        }
+      },
+      "short_term_signal": {
+        "bias": "long",
+        "strength": "high",
+        "long_score": 15,
+        "short_score": 6,
+        "long_core_score": 6,
+        "short_core_score": 2,
+        "long_micro_score": 2,
+        "short_micro_score": 2,
+        "market_regime": "range_or_mixed",
+        "swing_mtf_score": 85.78,
+        "swing_mtf_bias": "long",
+        "long_threshold": 8,
+        "short_threshold": 8,
+        "gate_open": {
+          "long": true,
+          "short": false
+        },
+        "checks": {
+          "long_core": {
+            "4h_trend": true,
+            "1h_trend": true,
+            "24h_return": true,
+            "1h_above_vwap": true,
+            "onchain_not_bearish": true,
+            "funding_not_bearish": true
+          },
+          "short_core": {
+            "4h_trend": false,
+            "1h_trend": false,
+            "24h_return": false,
+            "1h_below_vwap": false,
+            "onchain_not_bullish": true,
+            "funding_not_bullish": true
+          },
+          "long_micro": {
+            "1h_rsi": false,
+            "1h_volume": true,
+            "4h_return": false,
+            "no_false_breakout": true
+          },
+          "short_micro": {
+            "1h_rsi": false,
+            "1h_volume": true,
+            "4h_return": false,
+            "no_false_breakout": true
+          }
+        },
+        "thesis": [
+          "4h 與 1h 同步偏多，優先看上方波段延續。",
+          "市場狀態 range_or_mixed；核心 long 6/6、short 2/6；1h 微結構 long 2/4、short 2/4。",
+          "1h 量比 1.838、RSI 78.5、VWAP 上方。",
+          "swing_mtf_score 85.78 / 偏向 long",
+          "Funding 0.008% / avg -0.0054% / neutral"
+        ],
+        "reference_price": 2403.0,
+        "false_breakout": {
+          "false_breakout_up": false,
+          "false_breakout_down": false
+        },
+        "strategy_style": "swing",
+        "timeframe_anchor": "1h/4h",
+        "onchain_bias": "neutral",
+        "funding_bias": "neutral",
+        "funding_available": true,
+        "funding_signal": "NORMAL"
+      },
+      "protections": {
+        "active": false,
+        "pause_long": false,
+        "pause_short": false,
+        "hard_block": false,
+        "blocks_new_entries": false,
+        "rules": [],
+        "summaries": [],
+        "status": "normal"
+      }
+    },
+    {
+      "symbol": "XRPUSDT",
+      "market_source": "binance",
+      "timestamp": "2026-04-22T15:59:49.922308+00:00",
+      "price": 1.4564,
+      "returns": {
+        "5m": -0.226,
+        "1h": -0.082,
+        "4h": 0.144,
+        "24h": 1.676
+      },
+      "volatility": {
+        "atr_pct": 0.649,
+        "realized_24h": 1.689
+      },
+      "trend": {
+        "ema20": 1.4474,
+        "ema50": 1.4386,
+        "ema20_gt_ema50": true,
+        "rsi14": 71.656,
+        "trend_view": "bullish"
+      },
+      "volume": {
+        "vol_ratio": 1.491
+      },
+      "news_summary": {
+        "sentiment": "positive",
+        "score": 1.0,
+        "confidence": 0.55,
+        "conflict": false,
+        "macro_bias": "risk_off",
+        "macro_confidence": 0.9,
+        "macro_conflict": true,
+        "event_risk_level": "high",
+        "event_risk_score": 10,
+        "expires_hours": 12,
+        "key_event_headlines": [
+          "Bitcoin tests $78,000 resistance as short-squeeze risks mount, altcoins rally",
+          "Prediction markets are the new secret weapon for Coinbase and Robinhood growth",
+          "Lazarus-linked macOS malware hits crypto and fintech firms"
+        ]
+      },
+      "news": [
+        {
+          "headline": "Inside the MAS Sandbox: How Ripple is testing RLUSD for real trade settlements",
+          "sentiment": "positive",
+          "score": 1.0,
+          "confidence": 0.55,
+          "link": "https://cointelegraph.com/explained/rlusd-mas-bloom-pilot-trade-finance-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        }
+      ],
+      "onchain_summary": {
+        "enabled": false,
+        "available": false,
+        "provider": "coinmetrics",
+        "asset": null,
+        "bias": "neutral",
+        "confidence": "low",
+        "summary": [
+          "此標的暫不納入鏈上分析。"
+        ],
+        "metrics": {}
+      },
+      "funding_summary": {
+        "enabled": true,
+        "available": false,
+        "provider": "binance_futures",
+        "symbol": "XRPUSDT",
+        "signal": "NORMAL",
+        "bias": "neutral",
+        "current_rate": 0.0,
+        "current_rate_pct": 0.0,
+        "avg_recent_rate": 0.0,
+        "avg_recent_rate_pct": 0.0,
+        "summary": [
+          "Funding overlay 目前只套用 BTC / ETH。"
+        ]
+      },
+      "decision": "scale_in_test",
+      "confidence": 0.832,
+      "risk_score": 16,
+      "risk_level": "low",
+      "trend_view": "bullish",
+      "thesis": [
+        "短線趨勢：bullish，RSI=71.7",
+        "24h波動=1.69% / ATR=0.65%",
+        "風險分解={'volatility': 7.75, 'liquidity': 3, 'news_uncertainty': 0, 'trend_conflict': 4, 'event_risk': 1, 'news_event_overlay': 0.0}"
+      ],
+      "trade_plan": {
+        "entry_zone": [
+          1.4526,
+          1.4555
+        ],
+        "stop_loss": 1.446,
+        "take_profit": [
+          1.4715,
+          1.4829
+        ],
+        "max_risk_per_trade_pct": 0.8
+      },
+      "warnings": [],
+      "model_source": "rule_engine",
+      "beginner_summary": {
+        "headline": "XRPUSDT：可小額分批試單（風險低 16/100）",
+        "core_reason": "目前趨勢偏多，目前屬於橫盤。",
+        "now_action": "若要執行，請用小額分批：參考進場區 [1.4526, 1.4555]，並先寫好停損 1.446。",
+        "reminder": "提醒價位：上破 `1.4648` 代表上方劇本開始成立，下破 `1.4451` 代表下方劇本開始成立。 短線執行區（做多） `1.4614 ~ 1.4648`；短線執行區（做空） `1.4451 ~ 1.4485`。",
+        "range_hint": "大區間：`1.4473 ~ 1.4626`；中間觀望區：`1.4519 ~ 1.458`；預估出方向時間：約 6-18 小時（中）。",
+        "phase_hint": "目前階段：橫盤中段。價格仍在箱體中央，先看上下破再決定方向。",
+        "path_map_hint": "第一支撐 `1.4451 ~ 1.4485`；第二支撐 `1.4473 ~ 1.4519`；第一壓力 `1.4614 ~ 1.4648`；第二壓力 `1.458 ~ 1.4626`。",
+        "break_path_hint": "若跌破 `1.4451`，下一支撐先看 `1.4101`，再看 `1.3898`。 若站上 `1.4648`，下一壓力先看 `1.4998`，再看 `1.5201`。 若仍在橫盤，粗略時間窗先看 約 6-18 小時（中），但時間只供參考，價位優先。",
+        "protection_hint": "保護層：目前未啟動。",
+        "long_short_hint": "做多觸發 `1.4648`；做空觸發 `1.4451`；目前劇本：偏多，若上破並站穩 1h 結構，可規劃波段多單。",
+        "executor_hint": "做多執行：`stop_market`，RR(TP1) `1.145`，品質 `tradable`，未成交約 `240` 分鐘後取消。 做空執行：`stop_market`，RR(TP1) `1.145`，品質 `tradable`，未成交約 `240` 分鐘後取消。",
+        "execution_hint": "做多：第一次突破看 `1.4648`，回踩確認區 `1.4627 ~ 1.4652`，第二次突破價 `1.4714`。 做空：第一次跌破看 `1.4451`，反抽確認區 `1.4447 ~ 1.4473`，第二次跌破價 `1.4385`。",
+        "stop_hint": "建議止損：做多若失守 `1.4466` 就撤。 從上破價算，現貨止損約 `1.242%`。",
+        "exit_hint": "短線出場：價格到 `1.4881` 後，止損可上移到保本 `1.4648`；分批止盈區 `1.4939 ~ 1.5056`；續抱區 `1.5085 ~ 1.5303`。",
+        "leverage_hint": "現貨角度：上破價 `1.4648`，止損 `1.4466`，止損幅度約 `1.242%`。",
+        "short_bias_hint": "短線方向：`long`，強度：`high`，市場狀態：`range_or_mixed`。",
+        "avoid": [
+          "不要滿倉或重倉一次梭哈",
+          "不要不設停損",
+          "不要因為一根紅K就追單"
+        ]
+      },
+      "position_examples": {
+        "assumptions": {
+          "leverage": 20.0,
+          "account_allocation_pct": 50.0
+        },
+        "recommended_side": "long",
+        "reference_entry": 1.4648,
+        "recommended_stop_loss": 1.4466,
+        "recommended_take_profit_1": 1.4998,
+        "recommended_take_profit_2": 1.5201,
+        "move_stop_to_breakeven_at": 1.4881,
+        "breakeven_stop_price": 1.4648,
+        "scale_out_zone": [
+          1.4939,
+          1.5056
+        ],
+        "runner_zone": [
+          1.5085,
+          1.5303
+        ],
+        "to_stop_loss": {
+          "spot_move_pct": -1.242,
+          "position_roi_pct": -24.85,
+          "account_pnl_pct": -12.425
+        },
+        "to_take_profit_1": {
+          "spot_move_pct": 2.389,
+          "position_roi_pct": 47.788,
+          "account_pnl_pct": 23.894
+        },
+        "to_take_profit_2": {
+          "spot_move_pct": 3.775,
+          "position_roi_pct": 75.505,
+          "account_pnl_pct": 37.753
+        }
+      },
+      "market_state": {
+        "is_sideways": true,
+        "state": "sideways",
+        "range_4h": [
+          1.4473,
+          1.4626
+        ],
+        "range_pct_4h": 1.051
+      },
+      "actionable_levels": {
+        "range_low": 1.4473,
+        "range_high": 1.4626,
+        "breakout_up": 1.4648,
+        "breakout_down": 1.4451,
+        "long_ready_zone": [
+          1.4614,
+          1.4648
+        ],
+        "short_ready_zone": [
+          1.4451,
+          1.4485
+        ],
+        "long_retest_zone": [
+          1.4627,
+          1.4652
+        ],
+        "short_retest_zone": [
+          1.4447,
+          1.4473
+        ],
+        "noise_zone": [
+          1.4519,
+          1.458
+        ],
+        "execution_band_pct": 0.231,
+        "timing_window": "約 6-18 小時",
+        "timing_confidence": "中",
+        "timing_reason": "區間震盪中，接近箱體邊界時容易出方向。",
+        "price_map": {
+          "phase": "橫盤中段",
+          "phase_reason": "價格仍在箱體中央，先看上下破再決定方向。",
+          "primary_support": [
+            1.4451,
+            1.4485
+          ],
+          "secondary_support": [
+            1.4473,
+            1.4519
+          ],
+          "primary_resistance": [
+            1.4614,
+            1.4648
+          ],
+          "secondary_resistance": [
+            1.458,
+            1.4626
+          ],
+          "if_break_down": "若跌破 `1.4451`，下一支撐先看 `1.4101`，再看 `1.3898`。",
+          "if_break_up": "若站上 `1.4648`，下一壓力先看 `1.4998`，再看 `1.5201`。",
+          "timing_note": "若仍在橫盤，粗略時間窗先看 約 6-18 小時（中），但時間只供參考，價位優先。"
+        }
+      },
+      "timeframe_view": {
+        "5m": {
+          "timeframe": "5m",
+          "trend": "mixed",
+          "rsi14": 51.26,
+          "ema_fast": 1.4568,
+          "ema_slow": 1.4561,
+          "range_pct_20bars": 0.714,
+          "return_1bar_pct": -0.226,
+          "return_6bar_pct": 0.151,
+          "volume_ratio": 0.481,
+          "vwap20": 1.4556,
+          "above_vwap": true
+        },
+        "15m": {
+          "timeframe": "15m",
+          "trend": "bullish",
+          "rsi14": 57.7,
+          "ema_fast": 1.4546,
+          "ema_slow": 1.4506,
+          "range_pct_20bars": 1.051,
+          "return_1bar_pct": 0.014,
+          "return_6bar_pct": -0.144,
+          "volume_ratio": 0.758,
+          "vwap20": 1.4546,
+          "above_vwap": true
+        },
+        "1h": {
+          "timeframe": "1h",
+          "trend": "bullish",
+          "rsi14": 71.66,
+          "ema_fast": 1.4474,
+          "ema_slow": 1.4386,
+          "range_pct_20bars": 3.461,
+          "return_1bar_pct": -0.082,
+          "return_6bar_pct": 0.338,
+          "volume_ratio": 1.601,
+          "vwap20": 1.4468,
+          "above_vwap": true
+        },
+        "4h": {
+          "timeframe": "4h",
+          "trend": "bullish",
+          "rsi14": 68.54,
+          "ema_fast": 1.4356,
+          "ema_slow": 1.4187,
+          "range_pct_20bars": 4.923,
+          "return_1bar_pct": 0.144,
+          "return_6bar_pct": 1.676,
+          "volume_ratio": 1.355,
+          "vwap20": 1.4283,
+          "above_vwap": true
+        }
+      },
+      "long_short_plan": {
+        "analysis_bias": "long_bias",
+        "direction_bias": "long_bias",
+        "recommendation": "偏多，若上破並站穩 1h 結構，可規劃波段多單。",
+        "timeframe_weight": "4h:45%, 1h:35%, 15m:20%",
+        "tf_1h_trend": "bullish",
+        "tf_4h_trend": "bullish",
+        "signal_strength": "high",
+        "execution_readiness": "ready",
+        "execution_readiness_label": "可開始規劃",
+        "preferred_setup": "long",
+        "trigger_distance": {
+          "long": {
+            "distance_abs": 0.0084,
+            "distance_pct": 0.577,
+            "distance_atr": 0.577,
+            "readiness": "ready"
+          },
+          "short": {
+            "distance_abs": 0.0113,
+            "distance_pct": 0.776,
+            "distance_atr": 0.776,
+            "readiness": "ready"
+          },
+          "preferred": {
+            "distance_abs": 0.0084,
+            "distance_pct": 0.577,
+            "distance_atr": 0.577,
+            "readiness": "ready"
+          }
+        },
+        "confirmation_priority": "swing_breakout_retest",
+        "swing_mtf_bias": "long",
+        "funding_bias": "neutral",
+        "onchain_bias": "neutral",
+        "long_setup": {
+          "trigger_price": 1.4648,
+          "entry_zone": [
+            1.4648,
+            1.4728
+          ],
+          "stop_loss": 1.4466,
+          "take_profit": [
+            1.4998,
+            1.5201
+          ],
+          "condition": "1h 結構轉強，4h 不逆勢，等波段突破成立。",
+          "setup_type": "波段轉強",
+          "confirmation": {
+            "first_breakout_watch": 1.4648,
+            "retest_zone": [
+              1.4627,
+              1.4652
+            ],
+            "second_breakout_trigger": 1.4714,
+            "retest_failure_level": 1.4524,
+            "notes": "先看 1h 站穩，再等回踩確認或第二次突破。"
+          },
+          "management": {
+            "breakeven_trigger": 1.4881,
+            "breakeven_stop": 1.4648,
+            "scale_out_zone": [
+              1.4939,
+              1.5056
+            ],
+            "runner_zone": [
+              1.5085,
+              1.5303
+            ],
+            "notes": "先收部分獲利，剩餘部位看趨勢續抱。"
+          },
+          "executor_plan": {
+            "order_type": "stop_market",
+            "entry_trigger": 1.4714,
+            "cancel_after_minutes": 240,
+            "risk_pct": 1.685,
+            "reward_tp1_pct": 1.93,
+            "reward_tp2_pct": 3.31,
+            "rr_to_tp1": 1.145,
+            "rr_to_tp2": 1.964,
+            "quality": "tradable",
+            "notes": []
+          }
+        },
+        "short_setup": {
+          "trigger_price": 1.4451,
+          "entry_zone": [
+            1.4371,
+            1.4451
+          ],
+          "stop_loss": 1.4633,
+          "take_profit": [
+            1.4101,
+            1.3898
+          ],
+          "condition": "1h 結構轉弱，4h 不逆勢，等波段跌破成立。",
+          "setup_type": "波段轉弱",
+          "confirmation": {
+            "first_breakout_watch": 1.4451,
+            "retest_zone": [
+              1.4447,
+              1.4473
+            ],
+            "second_breakout_trigger": 1.4385,
+            "retest_failure_level": 1.4575,
+            "notes": "先看 1h 跌破，再等反抽失敗或第二次跌破。"
+          },
+          "management": {
+            "breakeven_trigger": 1.4218,
+            "breakeven_stop": 1.4451,
+            "scale_out_zone": [
+              1.4043,
+              1.416
+            ],
+            "runner_zone": [
+              1.3796,
+              1.4014
+            ],
+            "notes": "先收部分獲利，剩餘部位看趨勢續抱。"
+          },
+          "executor_plan": {
+            "order_type": "stop_market",
+            "entry_trigger": 1.4385,
+            "cancel_after_minutes": 240,
+            "risk_pct": 1.724,
+            "reward_tp1_pct": 1.974,
+            "reward_tp2_pct": 3.385,
+            "rr_to_tp1": 1.145,
+            "rr_to_tp2": 1.964,
+            "quality": "tradable",
+            "notes": []
+          }
+        }
+      },
+      "short_term_signal": {
+        "bias": "long",
+        "strength": "high",
+        "long_score": 15,
+        "short_score": 6,
+        "long_core_score": 6,
+        "short_core_score": 2,
+        "long_micro_score": 2,
+        "short_micro_score": 2,
+        "market_regime": "range_or_mixed",
+        "swing_mtf_score": 85.04,
+        "swing_mtf_bias": "long",
+        "long_threshold": 8,
+        "short_threshold": 8,
+        "gate_open": {
+          "long": true,
+          "short": false
+        },
+        "checks": {
+          "long_core": {
+            "4h_trend": true,
+            "1h_trend": true,
+            "24h_return": true,
+            "1h_above_vwap": true,
+            "onchain_not_bearish": true,
+            "funding_not_bearish": true
+          },
+          "short_core": {
+            "4h_trend": false,
+            "1h_trend": false,
+            "24h_return": false,
+            "1h_below_vwap": false,
+            "onchain_not_bullish": true,
+            "funding_not_bullish": true
+          },
+          "long_micro": {
+            "1h_rsi": false,
+            "1h_volume": true,
+            "4h_return": false,
+            "no_false_breakout": true
+          },
+          "short_micro": {
+            "1h_rsi": false,
+            "1h_volume": true,
+            "4h_return": false,
+            "no_false_breakout": true
+          }
+        },
+        "thesis": [
+          "4h 與 1h 同步偏多，優先看上方波段延續。",
+          "市場狀態 range_or_mixed；核心 long 6/6、short 2/6；1h 微結構 long 2/4、short 2/4。",
+          "1h 量比 1.601、RSI 71.66、VWAP 上方。",
+          "swing_mtf_score 85.04 / 偏向 long"
+        ],
+        "reference_price": 1.4564,
+        "false_breakout": {
+          "false_breakout_up": false,
+          "false_breakout_down": false
+        },
+        "strategy_style": "swing",
+        "timeframe_anchor": "1h/4h",
+        "onchain_bias": "neutral",
+        "funding_bias": "neutral",
+        "funding_available": false,
+        "funding_signal": "NORMAL"
+      },
+      "protections": {
+        "active": false,
+        "pause_long": false,
+        "pause_short": false,
+        "hard_block": false,
+        "blocks_new_entries": false,
+        "rules": [],
+        "summaries": [],
+        "status": "normal"
+      }
+    },
+    {
+      "symbol": "SOLUSDT",
+      "market_source": "binance",
+      "timestamp": "2026-04-22T15:59:50.435669+00:00",
+      "price": 88.19,
+      "returns": {
+        "5m": -0.294,
+        "1h": -0.631,
+        "4h": -0.136,
+        "24h": 2.487
+      },
+      "volatility": {
+        "atr_pct": 0.811,
+        "realized_24h": 2.254
+      },
+      "trend": {
+        "ema20": 87.6249,
+        "ema50": 86.7029,
+        "ema20_gt_ema50": true,
+        "rsi14": 70.601,
+        "trend_view": "bullish"
+      },
+      "volume": {
+        "vol_ratio": 1.677
+      },
+      "news_summary": {
+        "sentiment": "neutral",
+        "score": 0.0,
+        "confidence": 0.4,
+        "conflict": false,
+        "macro_bias": "risk_off",
+        "macro_confidence": 0.9,
+        "macro_conflict": true,
+        "event_risk_level": "high",
+        "event_risk_score": 10,
+        "expires_hours": 12,
+        "key_event_headlines": [
+          "Bitcoin tests $78,000 resistance as short-squeeze risks mount, altcoins rally",
+          "Prediction markets are the new secret weapon for Coinbase and Robinhood growth",
+          "Lazarus-linked macOS malware hits crypto and fintech firms"
+        ]
+      },
+      "news": [
+        {
+          "headline": "Crypto giant GSR launches its first ETF to give investors an easy way to bet on the big 3 tokens",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://www.coindesk.com/markets/2026/04/21/crypto-giant-gsr-launches-its-first-etf-to-give-investors-an-easy-way-to-bet-on-the-big-3-tokens"
+        },
+        {
+          "headline": "Europe’s MiCA regime puts smaller crypto firms under pressure",
+          "sentiment": "neutral",
+          "score": 0.0,
+          "confidence": 0.4,
+          "link": "https://cointelegraph.com/news/europe-mica-regime-smaller-crypto-firms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+        }
+      ],
+      "onchain_summary": {
+        "enabled": false,
+        "available": false,
+        "provider": "coinmetrics",
+        "asset": null,
+        "bias": "neutral",
+        "confidence": "low",
+        "summary": [
+          "此標的暫不納入鏈上分析。"
+        ],
+        "metrics": {}
+      },
+      "funding_summary": {
+        "enabled": true,
+        "available": false,
+        "provider": "binance_futures",
+        "symbol": "SOLUSDT",
+        "signal": "NORMAL",
+        "bias": "neutral",
+        "current_rate": 0.0,
+        "current_rate_pct": 0.0,
+        "avg_recent_rate": 0.0,
+        "avg_recent_rate_pct": 0.0,
+        "summary": [
+          "Funding overlay 目前只套用 BTC / ETH。"
+        ]
+      },
+      "decision": "scale_in_test",
+      "confidence": 0.814,
+      "risk_score": 20,
+      "risk_level": "low",
+      "trend_view": "bullish",
+      "thesis": [
+        "短線趨勢：bullish，RSI=70.6",
+        "24h波動=2.25% / ATR=0.81%",
+        "風險分解={'volatility': 11.62, 'liquidity': 3, 'news_uncertainty': 0, 'trend_conflict': 4, 'event_risk': 1, 'news_event_overlay': 0.0}"
+      ],
+      "trade_plan": {
+        "entry_zone": [
+          87.9039,
+          88.1185
+        ],
+        "stop_loss": 87.4033,
+        "take_profit": [
+          89.3344,
+          90.1926
+        ],
+        "max_risk_per_trade_pct": 0.8
+      },
+      "warnings": [],
+      "model_source": "rule_engine",
+      "beginner_summary": {
+        "headline": "SOLUSDT：可小額分批試單（風險低 20/100）",
+        "core_reason": "目前趨勢偏多，目前不在明顯橫盤。",
+        "now_action": "若要執行，請用小額分批：參考進場區 [87.9039, 88.1185]，並先寫好停損 87.4033。",
+        "reminder": "提醒價位：上破 `89.454` 代表上方劇本開始成立，下破 `87.858` 代表下方劇本開始成立。 短線執行區（做多） `89.1614 ~ 89.454`；短線執行區（做空） `87.858 ~ 88.1506`。",
+        "range_hint": "大區間：`87.99 ~ 89.32`；中間觀望區：`88.389 ~ 88.921`；預估出方向時間：約 8-24 小時（中低）。",
+        "phase_hint": "目前階段：箱體下緣。價格靠近箱體下緣，容易在下破前先反覆。",
+        "path_map_hint": "第一支撐 `87.858 ~ 88.1506`；第二支撐 `85.7414 ~ 85.7414`；第一壓力 `87.99 ~ 88.389`；第二壓力 `88.921 ~ 89.32`。",
+        "break_path_hint": "若跌破 `87.8580`，下一支撐看 `85.7414`。 若站回 `88.3890` 上方，下一壓力看 `88.9210 ~ 89.3200`。 若仍在橫盤，粗略時間窗先看 約 8-24 小時（中低），但時間只供參考，價位優先。",
+        "protection_hint": "保護層：目前未啟動。",
+        "long_short_hint": "做多觸發 `89.454`；做空觸發 `87.858`；目前劇本：偏多，但先等價格靠近轉強價，再看 1h 是否站穩。",
+        "executor_hint": "做多執行：`stop_market`，RR(TP1) `1.147`，品質 `tradable`，未成交約 `360` 分鐘後取消。 做空執行：`stop_market`，RR(TP1) `1.147`，品質 `tradable`，未成交約 `360` 分鐘後取消。",
+        "execution_hint": "做多：第一次突破看 `89.454`，回踩確認區 `89.2678 ~ 89.4875`，第二次突破價 `89.8509`。 做空：第一次跌破看 `87.858`，反抽確認區 `87.8245 ~ 88.0442`，第二次跌破價 `87.4611`。",
+        "stop_hint": "建議止損：做多若失守 `88.3516` 就撤。 從上破價算，現貨止損約 `1.232%`。",
+        "exit_hint": "短線出場：價格到 `90.865` 後，止損可上移到保本 `89.454`；分批止盈區 `91.2178 ~ 91.9233`；續抱區 `92.0997 ~ 93.4225`。",
+        "leverage_hint": "現貨角度：上破價 `89.454`，止損 `88.3516`，止損幅度約 `1.232%`。",
+        "short_bias_hint": "短線方向：`long`，強度：`high`，市場狀態：`range_or_mixed`。",
+        "avoid": [
+          "不要滿倉或重倉一次梭哈",
+          "不要不設停損",
+          "不要因為一根紅K就追單"
+        ]
+      },
+      "position_examples": {
+        "assumptions": {
+          "leverage": 20.0,
+          "account_allocation_pct": 50.0
+        },
+        "recommended_side": "long",
+        "reference_entry": 89.454,
+        "recommended_stop_loss": 88.3516,
+        "recommended_take_profit_1": 91.5706,
+        "recommended_take_profit_2": 92.8052,
+        "move_stop_to_breakeven_at": 90.865,
+        "breakeven_stop_price": 89.454,
+        "scale_out_zone": [
+          91.2178,
+          91.9233
+        ],
+        "runner_zone": [
+          92.0997,
+          93.4225
+        ],
+        "to_stop_loss": {
+          "spot_move_pct": -1.232,
+          "position_roi_pct": -24.647,
+          "account_pnl_pct": -12.324
+        },
+        "to_take_profit_1": {
+          "spot_move_pct": 2.366,
+          "position_roi_pct": 47.323,
+          "account_pnl_pct": 23.661
+        },
+        "to_take_profit_2": {
+          "spot_move_pct": 3.746,
+          "position_roi_pct": 74.926,
+          "account_pnl_pct": 37.463
+        }
+      },
+      "market_state": {
+        "is_sideways": false,
+        "state": "trending",
+        "range_4h": [
+          87.99,
+          89.32
+        ],
+        "range_pct_4h": 1.508
+      },
+      "actionable_levels": {
+        "range_low": 87.99,
+        "range_high": 89.32,
+        "breakout_up": 89.454,
+        "breakout_down": 87.858,
+        "long_ready_zone": [
+          89.1614,
+          89.454
+        ],
+        "short_ready_zone": [
+          87.858,
+          88.1506
+        ],
+        "long_retest_zone": [
+          89.2678,
+          89.4875
+        ],
+        "short_retest_zone": [
+          87.8245,
+          88.0442
+        ],
+        "noise_zone": [
+          88.389,
+          88.921
+        ],
+        "execution_band_pct": 0.332,
+        "timing_window": "約 8-24 小時",
+        "timing_confidence": "中低",
+        "timing_reason": "方向仍在確認，需等待價格突破關鍵位。",
+        "price_map": {
+          "phase": "箱體下緣",
+          "phase_reason": "價格靠近箱體下緣，容易在下破前先反覆。",
+          "primary_support": [
+            87.858,
+            88.1506
+          ],
+          "secondary_support": [
+            85.7414,
+            85.7414
+          ],
+          "primary_resistance": [
+            87.99,
+            88.389
+          ],
+          "secondary_resistance": [
+            88.921,
+            89.32
+          ],
+          "if_break_down": "若跌破 `87.8580`，下一支撐看 `85.7414`。",
+          "if_break_up": "若站回 `88.3890` 上方，下一壓力看 `88.9210 ~ 89.3200`。",
+          "timing_note": "若仍在橫盤，粗略時間窗先看 約 8-24 小時（中低），但時間只供參考，價位優先。"
+        }
+      },
+      "timeframe_view": {
+        "5m": {
+          "timeframe": "5m",
+          "trend": "bearish",
+          "rsi14": 32.28,
+          "ema_fast": 88.3608,
+          "ema_slow": 88.4928,
+          "range_pct_20bars": 1.417,
+          "return_1bar_pct": -0.294,
+          "return_6bar_pct": 0.068,
+          "volume_ratio": 0.556,
+          "vwap20": 88.5352,
+          "above_vwap": false
+        },
+        "15m": {
+          "timeframe": "15m",
+          "trend": "mixed",
+          "rsi14": 47.58,
+          "ema_fast": 88.4824,
+          "ema_slow": 88.0447,
+          "range_pct_20bars": 1.508,
+          "return_1bar_pct": -0.125,
+          "return_6bar_pct": -0.955,
+          "volume_ratio": 0.503,
+          "vwap20": 88.6513,
+          "above_vwap": false
+        },
+        "1h": {
+          "timeframe": "1h",
+          "trend": "bullish",
+          "rsi14": 70.6,
+          "ema_fast": 87.6249,
+          "ema_slow": 86.7029,
+          "range_pct_20bars": 5.545,
+          "return_1bar_pct": -0.631,
+          "return_6bar_pct": -0.125,
+          "volume_ratio": 1.604,
+          "vwap20": 87.5958,
+          "above_vwap": true
+        },
+        "4h": {
+          "timeframe": "4h",
+          "trend": "bullish",
+          "rsi14": 71.52,
+          "ema_fast": 86.431,
+          "ema_slow": 85.8518,
+          "range_pct_20bars": 7.234,
+          "return_1bar_pct": -0.136,
+          "return_6bar_pct": 2.487,
+          "volume_ratio": 1.981,
+          "vwap20": 86.0361,
+          "above_vwap": true
+        }
+      },
+      "long_short_plan": {
+        "analysis_bias": "long_bias",
+        "direction_bias": "long_bias",
+        "recommendation": "偏多，但先等價格靠近轉強價，再看 1h 是否站穩。",
+        "timeframe_weight": "4h:45%, 1h:35%, 15m:20%",
+        "tf_1h_trend": "bullish",
+        "tf_4h_trend": "bullish",
+        "signal_strength": "high",
+        "execution_readiness": "caution",
+        "execution_readiness_label": "先等靠近",
+        "preferred_setup": "long",
+        "trigger_distance": {
+          "long": {
+            "distance_abs": 1.264,
+            "distance_pct": 1.433,
+            "distance_atr": 1.433,
+            "readiness": "caution"
+          },
+          "short": {
+            "distance_abs": 0.332,
+            "distance_pct": 0.376,
+            "distance_atr": 0.376,
+            "readiness": "ready"
+          },
+          "preferred": {
+            "distance_abs": 1.264,
+            "distance_pct": 1.433,
+            "distance_atr": 1.433,
+            "readiness": "caution"
+          }
+        },
+        "confirmation_priority": "swing_breakout_retest",
+        "swing_mtf_bias": "long",
+        "funding_bias": "neutral",
+        "onchain_bias": "neutral",
+        "long_setup": {
+          "trigger_price": 89.454,
+          "entry_zone": [
+            89.454,
+            89.939
+          ],
+          "stop_loss": 88.3516,
+          "take_profit": [
+            91.5706,
+            92.8052
+          ],
+          "condition": "1h 結構轉強，4h 不逆勢，等波段突破成立。",
+          "setup_type": "波段轉強",
+          "confirmation": {
+            "first_breakout_watch": 89.454,
+            "retest_zone": [
+              89.2678,
+              89.4875
+            ],
+            "second_breakout_trigger": 89.8509,
+            "retest_failure_level": 88.7044,
+            "notes": "先看 1h 站穩，再等回踩確認或第二次突破。"
+          },
+          "management": {
+            "breakeven_trigger": 90.865,
+            "breakeven_stop": 89.454,
+            "scale_out_zone": [
+              91.2178,
+              91.9233
+            ],
+            "runner_zone": [
+              92.0997,
+              93.4225
+            ],
+            "notes": "先收部分獲利，剩餘部位看趨勢續抱。"
+          },
+          "executor_plan": {
+            "order_type": "stop_market",
+            "entry_trigger": 89.8509,
+            "cancel_after_minutes": 360,
+            "risk_pct": 1.669,
+            "reward_tp1_pct": 1.914,
+            "reward_tp2_pct": 3.288,
+            "rr_to_tp1": 1.147,
+            "rr_to_tp2": 1.97,
+            "quality": "tradable",
+            "notes": []
+          }
+        },
+        "short_setup": {
+          "trigger_price": 87.858,
+          "entry_zone": [
+            87.373,
+            87.858
+          ],
+          "stop_loss": 88.9604,
+          "take_profit": [
+            85.7414,
+            84.5068
+          ],
+          "condition": "1h 結構轉弱，4h 不逆勢，等波段跌破成立。",
+          "setup_type": "波段轉弱",
+          "confirmation": {
+            "first_breakout_watch": 87.858,
+            "retest_zone": [
+              87.8245,
+              88.0442
+            ],
+            "second_breakout_trigger": 87.4611,
+            "retest_failure_level": 88.6076,
+            "notes": "先看 1h 跌破，再等反抽失敗或第二次跌破。"
+          },
+          "management": {
+            "breakeven_trigger": 86.447,
+            "breakeven_stop": 87.858,
+            "scale_out_zone": [
+              85.3887,
+              86.0942
+            ],
+            "runner_zone": [
+              83.8895,
+              85.2123
+            ],
+            "notes": "先收部分獲利，剩餘部位看趨勢續抱。"
+          },
+          "executor_plan": {
+            "order_type": "stop_market",
+            "entry_trigger": 87.4611,
+            "cancel_after_minutes": 360,
+            "risk_pct": 1.714,
+            "reward_tp1_pct": 1.966,
+            "reward_tp2_pct": 3.378,
+            "rr_to_tp1": 1.147,
+            "rr_to_tp2": 1.97,
+            "quality": "tradable",
+            "notes": []
+          }
+        }
+      },
+      "short_term_signal": {
+        "bias": "long",
+        "strength": "high",
+        "long_score": 15,
+        "short_score": 6,
+        "long_core_score": 6,
+        "short_core_score": 2,
+        "long_micro_score": 2,
+        "short_micro_score": 2,
+        "market_regime": "range_or_mixed",
+        "swing_mtf_score": 79.22,
+        "swing_mtf_bias": "long",
+        "long_threshold": 8,
+        "short_threshold": 8,
+        "gate_open": {
+          "long": true,
+          "short": false
+        },
+        "checks": {
+          "long_core": {
+            "4h_trend": true,
+            "1h_trend": true,
+            "24h_return": true,
+            "1h_above_vwap": true,
+            "onchain_not_bearish": true,
+            "funding_not_bearish": true
+          },
+          "short_core": {
+            "4h_trend": false,
+            "1h_trend": false,
+            "24h_return": false,
+            "1h_below_vwap": false,
+            "onchain_not_bullish": true,
+            "funding_not_bullish": true
+          },
+          "long_micro": {
+            "1h_rsi": false,
+            "1h_volume": true,
+            "4h_return": false,
+            "no_false_breakout": true
+          },
+          "short_micro": {
+            "1h_rsi": false,
+            "1h_volume": true,
+            "4h_return": false,
+            "no_false_breakout": true
+          }
+        },
+        "thesis": [
+          "4h 與 1h 同步偏多，優先看上方波段延續。",
+          "市場狀態 range_or_mixed；核心 long 6/6、short 2/6；1h 微結構 long 2/4、short 2/4。",
+          "1h 量比 1.604、RSI 70.6、VWAP 上方。",
+          "swing_mtf_score 79.22 / 偏向 long"
+        ],
+        "reference_price": 88.19,
+        "false_breakout": {
+          "false_breakout_up": false,
+          "false_breakout_down": false
+        },
+        "strategy_style": "swing",
+        "timeframe_anchor": "1h/4h",
+        "onchain_bias": "neutral",
+        "funding_bias": "neutral",
+        "funding_available": false,
+        "funding_signal": "NORMAL"
+      },
+      "protections": {
+        "active": false,
+        "pause_long": false,
+        "pause_short": false,
+        "hard_block": false,
+        "blocks_new_entries": false,
+        "rules": [],
+        "summaries": [],
+        "status": "normal"
+      }
+    }
+  ]
+}

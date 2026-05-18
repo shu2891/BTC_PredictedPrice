@@ -1,0 +1,13 @@
+{
+  "report": {
+    "generated_at": "2026-03-17T17:13:16.773338+00:00",
+    "start_date_utc": "2026-03-01",
+    "end_date_utc": "2026-03-03",
+    "total_events": 0,
+    "event_distribution": {},
+    "symbol_distribution": {},
+    "overall_by_horizon": {},
+    "by_horizon_type": {}
+  },
+  "events": []
+}

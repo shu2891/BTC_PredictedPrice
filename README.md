@@ -2,6 +2,18 @@
 
 `check_price` 是一套加密市場決策輔助系統。它不是保證獲利的自動交易機器人，也不是單純猜漲跌的訊號工具；它的核心目標是把交易流程拆成可理解、可執行、可回測、可持續修正的模組。
 
+![advisor dashboard](./docs/assets/advisor-dashboard.png)
+
+## 專案亮點
+
+| 面向 | 目前成果 |
+| --- | --- |
+| 多時間框架分析 | 整合 `24h / 4h / 1h / 5m` 資料，產出價格地圖、方向條件、停損停利與保護層 |
+| 提醒事件追蹤 | 已整理 `304` 筆提醒事件、`1209` 筆後續成效回填 |
+| 條件機率分析 | 已建立 `Parquet + DuckDB` 分析層，可拆解事件、方向、市場狀態與保護層表現 |
+| Paper trading | 完成含手續費、滑價、部位上限、事件分級風險的模擬執行層 |
+| 對外可讀性 | 附完整設計文件、報告導覽、歷史封存與可重跑分析腳本 |
+
 ## 這個專案在做什麼
 
 專案目前涵蓋四條主線：
@@ -23,16 +35,37 @@
    - 由 `paper_order_engine.py` 與 `paper_order_backtest.py` 模擬實際執行層
    - 納入手續費、滑價、部位上限與事件分級風險
 
-## 先看這幾份文件
+## 系統架構
 
-如果你第一次看這個 repo，建議依序閱讀：
+```mermaid
+flowchart LR
+    A["Market data<br/>24h / 4h / 1h / 5m"] --> B["shadow_mode.py<br/>multi-timeframe analysis"]
+    B --> C["market_alert_daemon.py<br/>event detection + Telegram alerts"]
+    C --> D["alert_performance_tracker.py<br/>live outcome tracking"]
+    D --> E["analytics_pipeline.py<br/>Parquet / DuckDB analysis"]
+    B --> F["historical_replay_backtest.py<br/>historical replay"]
+    B --> G["paper_order_engine.py<br/>simulated execution"]
+    G --> H["paper_order_backtest.py<br/>cost-aware paper trading"]
+    B --> I["advisor_api_server.py<br/>local dashboard"]
+```
 
-1. [`專案初心與方法論.md`](./專案初心與方法論.md)
-2. [`專案總覽與操作手冊.md`](./專案總覽與操作手冊.md)
-3. [`docs/public-data-guide.md`](./docs/public-data-guide.md)
-4. [`提醒事件成效報告.md`](./提醒事件成效報告.md)
-5. [`條件機率分析報告.md`](./條件機率分析報告.md)
-6. [`paper_trading_execution_optimization_20260331.md`](./paper_trading_execution_optimization_20260331.md)
+## 推薦閱讀路線
+
+如果你第一次看這個 repo，建議不要從所有檔案一路往下翻，而是照這條路線讀：
+
+| 想先理解什麼 | 建議先看 |
+| --- | --- |
+| 這個專案到底想解決什麼問題 | [`專案初心與方法論.md`](./專案初心與方法論.md) |
+| 系統怎麼運作、平常怎麼使用 | [`專案總覽與操作手冊.md`](./專案總覽與操作手冊.md) |
+| 哪些結果最值得先看 | [`docs/report-index.md`](./docs/report-index.md) |
+| 目前事件表現怎麼樣 | [`提醒事件成效報告.md`](./提醒事件成效報告.md) |
+| 條件機率分析結論 | [`條件機率分析報告.md`](./條件機率分析報告.md) |
+| 模擬執行層是否健康 | [`paper_trading_execution_optimization_20260331.md`](./paper_trading_execution_optimization_20260331.md) |
+
+更完整的文件導覽請看：
+
+- [`docs/report-index.md`](./docs/report-index.md)
+- [`docs/public-data-guide.md`](./docs/public-data-guide.md)
 
 ## 目前可以直接看到的成果
 
@@ -68,6 +101,16 @@
 
 - [`paper_trading_execution_optimization_20260331.md`](./paper_trading_execution_optimization_20260331.md)
 - [`docs/guides/paper-trading-health-and-execution-analysis.md`](./docs/guides/paper-trading-health-and-execution-analysis.md)
+
+### 代表性觀察
+
+目前資料呈現出一個很有研究價值的現象：
+
+- 在樣本中，**空方確認事件** 的後續表現明顯優於多方追價型事件
+- `effective_short_breakdown`、`second_breakdown_short`、`retest_hold_short` 在多個 horizon 下都比較值得優先研究
+- `approach_*` 更適合當作戰備提醒，而不是直接當成進場訊號
+
+這也是這個專案一直強調「事件分層」而不是「所有提醒都拿去下單」的原因。
 
 ## 專案結構
 

@@ -29,6 +29,7 @@
 
 ### 2. 再看目前整理出的成果
 
+- [`./report-index.md`](./report-index.md)
 - [`../提醒事件成效報告.md`](../提醒事件成效報告.md)
 - [`../條件機率分析報告.md`](../條件機率分析報告.md)
 - [`../paper_trading_execution_optimization_20260331.md`](../paper_trading_execution_optimization_20260331.md)
@@ -84,10 +85,11 @@
 最短路徑可以直接看：
 
 1. [`../README.md`](../README.md)
-2. [`../提醒事件成效報告.md`](../提醒事件成效報告.md)
-3. [`../條件機率分析報告.md`](../條件機率分析報告.md)
-4. [`../paper_trading_execution_optimization_20260331.md`](../paper_trading_execution_optimization_20260331.md)
-5. [`../reports/`](../reports)
+2. [`./report-index.md`](./report-index.md)
+3. [`../提醒事件成效報告.md`](../提醒事件成效報告.md)
+4. [`../條件機率分析報告.md`](../條件機率分析報告.md)
+5. [`../paper_trading_execution_optimization_20260331.md`](../paper_trading_execution_optimization_20260331.md)
+6. [`../reports/`](../reports)
 
 ## 如果你想重跑分析
 
